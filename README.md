@@ -177,9 +177,10 @@ The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a
 <!-- The logo represents the joy of heartfelt baking for oneself or others. Trying unconventional baking methods can be intimidating, and I wanted to show that it can also be simple, an act of kindness and community. It's an open source icon with the initials of Grain Free Friend in Montserrat font.<br>
 The logo image was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
 ![Logo](static/images/logo.png) -->
+The logo was made with [Looka](https://looka.com/).
 #### Favicon
-<!-- The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
-![Favicon](static/images/readme-images/favicon-image.png) -->
+The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
+![Favicon]()
 #### Images
 <!-- The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <br>

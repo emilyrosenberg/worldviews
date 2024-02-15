@@ -1,10 +1,12 @@
-import { Button } from 'react-bootstrap';
 import './App.css';
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
     <div className="App">
-      <h1>Worldviews</h1>
+    <div className="App">
+      <NavBar />
+    </div>
     </div>
   );
 }
