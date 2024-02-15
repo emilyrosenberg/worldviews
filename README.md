@@ -174,20 +174,21 @@ The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). Th
 The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
 ![Raleway font](static/images/readme-images/font-raleway.png) -->
 #### Logo
-<!-- The logo represents the joy of heartfelt baking for oneself or others. Trying unconventional baking methods can be intimidating, and I wanted to show that it can also be simple, an act of kindness and community. It's an open source icon with the initials of Grain Free Friend in Montserrat font.<br>
-The logo image was created using the [wix.com logo maker](https://www.wix.com/logo/maker). <br>
-![Logo](static/images/logo.png) -->
-The logo was made with [Looka](https://looka.com/).
+The logo represents...
+<br>
+The logo was made with [Looka](https://looka.com/). <br>
+![Logo](src/assets/logo-text.png)
+
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
-![Favicon]()
+![Favicon](src/assets/logo-favicon.png)
+
 #### Images
 <!-- The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
 <br>
 They are stored in and accessed through [Cloudinary](https://cloudinary.com). -->
 
 #### Background
-<!-- The background is the lightest color in the palette, so that the content is clearly visible. -->
 
 ## Testing
 #### Lighthouse
