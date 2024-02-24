@@ -201,7 +201,19 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com). --
 ### Manual Testing
 <!-- This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari. The UX design was tested by users. -->
 ### Bugs
-- 
+- Unable to deploy backend or update Config Vars 
+  - Tried [this](https://stackoverflow.com/questions/71076368/unable-to-add-update-config-variables-in-heroku) but it did not work
+  - Got help from tutoring, commented out CLIENT_ORIGIN_DEV in settings.py
+  - Created a new Heroku app for the API
+  - Added the correct Config Vars including CLIENT_ORIGIN_DEV
+  - Was then not able to connect frontend and backend
+- Unable to connect frontend and backend
+  - Axios 404 error
+  - Got help from tutoring, uncommented CLIENT_ORIGIN_DEV in settings.py and was able to deploy the API
+  - Changed the CLIENT_ORIGIN_DEV to the Gitpod workspace
+  - Frontend and backend connected
+  - Tested by creating a new post in the frontend, which showed in the backend with an ID of 1
+  - Previous posts from the API were not visible, and we do not know why this is
 
 ## Future Implementations
 <!-- There are many features that will improve the user's experience of the current web app. 
