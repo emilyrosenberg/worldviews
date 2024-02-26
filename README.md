@@ -2,7 +2,9 @@
 
 A travel community for sharing experiences and recommendations
 
-![Mockup on different devices, created with Techsini.]()
+<div align="center">
+  <img src="" alt="Mockup on different devices, created with Techsini." width="">
+</div>
 
 Worldviews is a travel community web app for...
 <br>
@@ -152,6 +154,10 @@ The header includes the GFF logo, navigation items, and a search bar.
 #### Footer
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/). -->
 
+### Features
+#### Header and navigation
+#### Footer
+
 ### Surface
 #### Colors
 <!-- The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive. <br>
@@ -174,19 +180,25 @@ The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). Th
 The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
 ![Raleway font](static/images/readme-images/font-raleway.png) -->
 #### Logo
-The logo represents...
+The logo represents the Worldviews community's love of travel. Each person on earth has a unique perspective depending on their background, travel style, means of transport - maybe a bicycle! This is the place to share all these wonderful views with the world, within a kind and curious community.
 <br>
 The logo was made with [Looka](https://looka.com/). <br>
-![Logo](src/assets/logo-text.png)
+
+<div align="left">
+  <img src="src/assets/logo-text.png" alt="Worldviews logo" width="300">
+</div>
 
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
-![Favicon](src/assets/logo-favicon.png)
+
+<div align="left">
+  <img src="src/assets/logo-favicon.png" alt="Worldviews favicon" width="50">
+</div>
 
 #### Images
-<!-- The recipe images are either my personal photos or from [Unsplash](https://unsplash.com/).
+All of the post and profile images are from [Unsplash](https://unsplash.com/).
 <br>
-They are stored in and accessed through [Cloudinary](https://cloudinary.com). -->
+They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
 
@@ -241,12 +253,28 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com). --
 - dj-database-url
 - django-allauth (authorization package)
 - django-cloudinary-storage
-- django-crispy-forms (styles forms)
 - django-resized (resizes a photo submitted in the form)
 - django-richtextfield (allows markdown styling in input fields)
 - gunicorn (server for WSGI applications)
 - psycopg2
 - whitenoise (allows static files to load in deployed app) -->
+
+- axios
+- bootstrap
+- jwt-decode
+- react
+- react-bootstrap
+- react-dom
+- react-infinite-scroll-component
+- react-router-dom
+- react-scripts
+- web-vitals
+- react-app
+- react-app/jest
+- msw
+- node
+- npm
+
 ### Frameworks and Websites
 - Bootstrap4
 - Django
