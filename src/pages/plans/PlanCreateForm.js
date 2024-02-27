@@ -41,6 +41,11 @@ function PlanCreateForm() {
     formData.append("title", title);
     formData.append("content", content);
 
+    // Log axiosReq
+    // Check if axiosReq includes a plan method
+    console.log("axiosReq:", axiosReq); 
+    console.log("axiosReq.plan:", axiosReq.plan);
+
     try {
       const { data } = await axiosReq.plan("/plans/", formData);
       history.push(`/plans/${data.id}`);
