@@ -14,6 +14,8 @@ import ProfilePage from "./pages/profiles/ProfilePage";
 import UsernameForm from "./pages/profiles/UsernameForm";
 import UserPasswordForm from "./pages/profiles/UserPasswordForm";
 import ProfileEditForm from "./pages/profiles/ProfileEditForm";
+import PlanCreateForm from "./pages/plans/PlanCreateForm";
+import PlansPage from "./pages/plans/PlansPage";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -73,6 +75,8 @@ function App() {
             path="/profiles/:id/edit"
             render={() => <ProfileEditForm />}
           />
+          <Route exact path="/plans/create" render={() => <PlanCreateForm />} />
+          <Route exact path="/plans/:id" render={() => <PlansPage />} />
 
           <Route render={() => <NotFound />} />
         </Switch>
