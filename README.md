@@ -222,10 +222,16 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 - Unable to connect frontend and backend
   - Axios 404 error
   - Got help from tutoring, uncommented CLIENT_ORIGIN_DEV in settings.py and was able to deploy the API
-  - Changed the CLIENT_ORIGIN_DEV to the Gitpod workspace
-  - Frontend and backend connected
+  - Changed the CLIENT_ORIGIN_DEV var to the Gitpod workspace instead
+  - Frontend and backend then connected
   - Tested by creating a new post in the frontend, which showed in the backend with an ID of 1
   - Previous posts from the API were not visible, and we do not know why this is
+- Submit button not working in plans
+  - I tried to recreate the Posts views to make the Plans views, but the form wasn't working
+  - I got this error in the console:<br>
+    TypeError: _ api_axiosDefaults__WEBPACK_IMPORTED_MODULE_4__.axiosReq.plan is not a function
+  - I read [this guidance on Stack Overflow](https://stackoverflow.com/questions/55092281/axios-webpack-imported-module-0-default-amethod-is-not-a-function) and realized that when I changed "post" to "plan" everywhere, of course that also affected the post method. Oops.
+  - I changed the code back to `axiosReq.post` and was able to submit the form.
 
 ## Future Implementations
 <!-- There are many features that will improve the user's experience of the current web app. 
