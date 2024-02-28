@@ -6,9 +6,10 @@ A travel community for sharing experiences and recommendations
   <img src="" alt="Mockup on different devices, created with Techsini." width="">
 </div>
 
-Worldviews is a travel community web app for...
+Worldviews is a community web app for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.
 <br>
 This website is responsive on all devices, and designed to be appealing and intuitive. Users can...
+<!-- Add content here -->
 <hr>
 
 ## Table of Contents
@@ -155,8 +156,19 @@ The header includes the GFF logo, navigation items, and a search bar.
 The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/). -->
 
 ### Features
-#### Header and navigation
-#### Footer
+
+#### Reusable components
+- Navbar
+- Avatar
+- Asset
+- More dropdown for editing and deleting
+
+#### Profiles
+#### Posts
+#### Plans
+#### Locations
+#### About
+#### Most popular profiles
 
 ### Surface
 #### Colors
