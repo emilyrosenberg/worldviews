@@ -29,15 +29,14 @@ This website is responsive on all devices, and designed to be appealing and intu
 
 ## UX
 ### User Personas
-<!-- - A home cook who enjoys experimenting and wants to learn more about grain-free baking.
-- A person with overlapping dietary restrictions (low-carb + kosher, vegan + celiac, etc).
-- A person with new grain-free dietary restrictions who wants to find tasty substitute recipes efficiently. -->
+- A world traveler who loves to take photos.
+- 
 
 ### User Stories
 
 These stories guided the development of features. To implement Agile methodology, they were mapped to Github Projects in a [kanban board](https://github.com/users/emilyrosenberg/projects/7/views/1) along with other development tasks. They are grouped into Milestones and tagged with priority labels.
 
-### Navigation & Authentication (from walkthrough)
+#### Navigation & Authentication (from walkthrough)
 - Navigation: As a user I can view a navbar from every page so that I can navigate easily between pages
 - Routing: As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh
 - Authentication - Sign up: As a user I can create a new account so that I can access all the features for signed up users
@@ -47,19 +46,19 @@ These stories guided the development of features. To implement Agile methodology
 - Navigation: Conditional rendering - As a logged out user I can see sign in and sign up options so that I can sign in/sign up
 - Avatar: As a user I can view user's avatars so that I can easily identify users of the application
 
-### Adding & Liking Posts (from walkthrough)
+#### Adding & Liking Posts (from walkthrough)
 - Create posts: As a logged in user I can create posts so that I can share my images with the world!
 - View a post: As a user I can view the details of a single post so that I can learn more about it
 - Like a post: As a logged in user I can like a post so that I can show my support for the posts that interest me
 
-### The Posts Page (from walkthrough)
+#### The Posts Page (from walkthrough)
 - View most recent posts: As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content
 - Keyword search: As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in.
 - View liked posts: As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most
 - View posts of followed users: As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about
 - Infinite scroll: As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc
 
-### The Post Page (from walkthrough)
+#### The Post Page (from walkthrough)
 - Post page: As a user I can view the posts page so that I can read the comments about the post
 - Edit post: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created
 - Create a comment: As a logged in user I can add comments to a post so that I can share my thoughts about the post
@@ -68,7 +67,7 @@ These stories guided the development of features. To implement Agile methodology
 - Delete comments: As an owner of a comment I can delete my comment so that I can control removal of my comment from the application
 - Edit a comment: As an owner of a comment I can edit my comment so that I can fix or update my existing comment
 
-### The Profile Page (from walkthrough)
+#### The Profile Page (from walkthrough)
 - Profile page: As a user I can view other users profiles so that I can see their posts and learn more about them
 - Most followed profiles: As a user I can see a list of the most followed profiles so that I can see which profiles are popular
 - User profile - user stats: As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them
@@ -77,12 +76,12 @@ These stories guided the development of features. To implement Agile methodology
 - Edit profile: As a logged in user I can edit my profile so that I can change my profile picture and bio
 - Update username and password: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure
 
-### Locations model
+#### Locations model
 - Locations page: As a user I can view all post locations so that I can get inspiration about locations
 - Locations search: As a user I can search post locations so that I can see posts about a specific location
 - Popular locations: As a user I can see the most popular locations for posts, so that I know where other users are traveling and posting
 
-### Plans model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
+#### Plans model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
 - Create plan: As a logged-in user I can create a plan so that I can ask other users for info about a location
 - Manage plan: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request
 - View plans: As a user I can view plans that other users have made so that I can see if there are any interesting ones
