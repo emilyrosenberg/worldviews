@@ -39,6 +39,15 @@ const NavBar = () => {
       <i className="far fa-plus-square"></i>Add post
     </NavLink>
   );
+  const addPlanIcon = (
+    <NavLink
+      className={styles.NavLink}
+      activeClassName={styles.Active}
+      to="/plans/create"
+    >
+      <i className="far fa-plus-square"></i>Add plan
+    </NavLink>
+  );
   const loggedInIcons = (
     <>
       <NavLink
@@ -99,6 +108,7 @@ const NavBar = () => {
           </Navbar.Brand>
         </NavLink>
         {currentUser && addPostIcon}
+        {currentUser && addPlanIcon}
         <Navbar.Toggle
           ref={ref}
           onClick={() => setExpanded(!expanded)}
