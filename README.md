@@ -81,13 +81,13 @@ These stories guided the development of features. To implement Agile methodology
 - Locations search: As a user I can search post locations so that I can see posts about a specific location
 - Popular locations: As a user I can see the most popular locations for posts, so that I know where other users are traveling and posting
 
-### Requests model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
-- Create request: As a logged-in user I can create a request so that I can ask other users for info about a location
-- Manage request: As a logged-in user I can edit or delete my own requests so that I can make corrections or update my request
-- View requests: As a user I can view requests that other users have made so that I can see if there are any interesting ones
-- Location search: As a user I can search requests so that I can find past recommendations
-- Create request comments: As a logged-in user I can comment on a request so that I can share info with other users
-- Manage request comments: As a logged-in user I can edit or delete my own comments so that I can control my contributions
+### Plans model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
+- Create plan: As a logged-in user I can create a plan so that I can ask other users for info about a location
+- Manage plan: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request
+- View plans: As a user I can view plans that other users have made so that I can see if there are any interesting ones
+- Location search: As a user I can search plans so that I can find past recommendations
+- Create plans comments: As a logged-in user I can comment on a plan so that I can share info with other users
+- Manage plan comments: As a logged-in user I can edit or delete my own comments so that I can control my contributions
 
 ### Structure
 #### Landing Page
@@ -179,6 +179,7 @@ The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). Th
 ![Montserrat font](static/images/readme-images/font-montserrat.png)
 The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
 ![Raleway font](static/images/readme-images/font-raleway.png) -->
+
 #### Logo
 The logo represents the Worldviews community's love of travel. Each person on earth has a unique perspective depending on their background, travel style, means of transport - maybe a bicycle! This is the place to share all these wonderful views with the world, within a kind and curious community.
 <br>
@@ -367,14 +368,16 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 <!-- - The recipe images are either my personal photos or open source photos from [Unsplash](https://unsplash.com/).
 - The social media icons are from [UXWing](https://uxwing.com/). -->
 ### Thank you
-<!-- - This project was developed using the [Django Recipe Sharing tutorial by Dee Mc](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy&index=1). I am indebted to her for inspiration on the entire project, including the Django logic, the basic styling of the header, footer, and forms, the CRUD functionality of the recipes and favorites, class-based views, and querying.
-- The project was also inspired by Code Institute's Django Blog Walkthrough. I used this to help create the success alerts.
-- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4). When I finish it I hope I can come anywhere close to this standard.
+- This project was developed using the [Code Institute Moments walkthrough](). I used this tutorial as inspiration on the entire project.
+- The project was also inspired by 
+[Ronja Sjögren's Pet Palace PP5 project](https://github.com/Ajn0r/pet-palace).
+- More inspo came from [Sandra Bergstrom's Travel Tickr](https://github.com/SandraBergstrom/travel-tickr).
+- Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
-- Thank you to my Code Institute mentor Adegbenga Adeye.
-- Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks. Also thanks for suggesting the recipe sharing tutorial by Dee Mc!
-- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones. -->
+- Thank you to my Code Institute mentor.
+- Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks.
+- And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
 
 <!-- ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
