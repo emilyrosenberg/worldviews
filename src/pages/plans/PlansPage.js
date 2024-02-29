@@ -12,6 +12,8 @@ import styles from "../../styles/PlansPage.module.css";
 import { useLocation } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import NoResults from "../../assets/no-results.png"
+import InfiniteScroll from "react-infinite-scroll-component";
+import { fetchMoreData } from "../../utils/utils";
 
 function PlansPage( { message, filter = "" }) {
   const [plans, setPlans] = useState({ results: [] });
@@ -64,9 +66,18 @@ function PlansPage( { message, filter = "" }) {
         {hasLoaded ? (
           <>
             {plans.results.length ? (
-              plans.results.map((plan) => (
-                <Plan key={plan.id} {...plan} setPlans={setPlans} />
-              ))
+              <InfiniteScroll
+                children={
+                  plans.results.map((plan) => (
+                    <Plan key={plan.id} {...plan} setPlans={setPlans} />
+                  ))
+                }
+                dataLength={plans.results.length}
+                loader={<Asset spinner />}
+                hasMore={!!postMessage.next}
+                next={() => fetchMoreData(plans, setPlans)}
+                />
+              
             ) : (
               <Container className={appStyles.Content}>
                 <Asset src={NoResults} message={message} />
