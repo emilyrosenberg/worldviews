@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Container from "react-bootstrap/Container";
 import Plan from "./Plan";
-import Comment from "../comments/Comment";
+import PlanComment from "../comments/PlanComment";
 
 import appStyles from "../../App.module.css";
 import { useParams } from "react-router";
@@ -23,17 +23,17 @@ function PlanPage() {
 
   const currentUser = useCurrentUser();
   const profile_image = currentUser?.profile_image;
-  const [comments, setPlanComments] = useState({ results: [] });
+  const [plan_comments, setPlanComments] = useState({ results: [] });
 
   useEffect(() => {
     const handleMount = async () => {
       try {
-        const [{ data: plan }, { data: comments}] = await Promise.all([
+        const [{ data: plan }, { data: plan_comments}] = await Promise.all([
           axiosReq.get(`/plans/${id}`),
-          axiosReq.get(`/comments/?plan=${id}`)
+          axiosReq.get(`/plan_comments/?plan=${id}`)
         ]);
         setPlan({ results: [plan] });
-        setPlanComments(comments);
+        setPlanComments(plan_comments);
       } catch (err) {
         console.log(err);
       }
@@ -56,23 +56,23 @@ function PlanPage() {
               setPlan={setPlan}
               setPlanComments={setPlanComments}
             />
-          ) : comments.results.length ? (
+          ) : plan_comments.results.length ? (
             "Comments"
           ) : null}
-          {comments.results.length ? (
+          {plan_comments.results.length ? (
             <InfiniteScroll
-              children={comments.results.map((comment) => (
-                <Comment
-                  key={comment.id}
-                  {...comment}
+              children={plan_comments.results.map((plan_comment) => (
+                <PlanComment
+                  key={plan_comment.id}
+                  {...plan_comment}
                   setPlan={setPlan}
                   setPlanComments={setPlanComments}
                 />
               ))}
-              dataLength={comments.results.length}
+              dataLength={plan_comments.results.length}
               loader={<Asset spinner />}
-              hasMore={!!comments.next}
-              next={() => fetchMoreData(comments, setPlanComments)}
+              hasMore={!!plan_comments.next}
+              next={() => fetchMoreData(plan_comments, setPlanComments)}
             />
           ) : currentUser ? (
             <span>No comments yet, be the first to comment!</span>

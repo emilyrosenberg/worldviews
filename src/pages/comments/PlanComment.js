@@ -3,7 +3,7 @@ import Media from "react-bootstrap/Media";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from "../../components/MoreDropdown";
-// import CommentEditForm from "./CommentEditForm";
+import PlanCommentEditForm from "./PlanCommentEditForm";
 
 import styles from "../../styles/Comment.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
@@ -54,13 +54,13 @@ const PlanComment = (props) => {
         <Media.Body className="align-self-center ml-2">
           <span className={styles.Owner}>{owner}</span>
           <span className={styles.Date}>{updated_at}</span>
-          {showEditForm ? (
+          {showPlanEditForm ? (
             <PlanCommentEditForm
               id={id}
               profile_id={profile_id}
               content={content}
               profileImage={profile_image}
-              setComments={setComments}
+              setPlanComments={setPlanComments}
               setShowPlanEditForm={setShowPlanEditForm}
             />
           ) : (
