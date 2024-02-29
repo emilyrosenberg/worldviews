@@ -26,7 +26,7 @@ const Plan = (props) => {
   const history = useHistory();
 
   const handleEdit = () => {
-    history.push(`/plans/$(id)/edit`)
+    history.push(`/plans/${id}/edit`)
   };
 
   const handleDelete = async () => {

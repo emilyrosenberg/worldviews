@@ -244,6 +244,11 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
     TypeError: _ api_axiosDefaults__WEBPACK_IMPORTED_MODULE_4__.axiosReq.plan is not a function
   - I read [this guidance on Stack Overflow](https://stackoverflow.com/questions/55092281/axios-webpack-imported-module-0-default-amethod-is-not-a-function) and realized that when I changed "post" to "plan" everywhere, of course that also affected the post method. Oops.
   - I changed the code back to `axiosReq.post` and was able to submit the form.
+- Plan edit not working from the more dropdown menu
+  - Instead of the page for that individual plan, something that looked like the plan create page was loading.
+  - I checked the link in the Plans.js page
+  - I realized that I had typed `$(id)` instead of `${id}`
+  - I fixed the typo and it worked perfectly
 
 ## Future Implementations
 <!-- There are many features that will improve the user's experience of the current web app. 
