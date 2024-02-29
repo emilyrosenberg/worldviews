@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -18,11 +18,11 @@ function PlanEditForm() {
   
   const [errors, setErrors] = useState({});
 
-  const [postData, setPostData] = useState({
+  const [planData, setPlanData] = useState({
     title: "",
     content: "",
   });
-  const { title, content } = postData;
+  const { title, content } = planData;
 
   const history = useHistory();
   const { id } = useParams();
@@ -33,7 +33,7 @@ function PlanEditForm() {
         const { data } = await axiosReq.get(`/plans/${id}/`);
         const { title, content, is_owner } = data;
 
-        is_owner ? setPostData({ title, content }) : history.push("/");
+        is_owner ? setPlanData({ title, content }) : history.push("/");
       } catch (err) {
         console.log(err);
       }
