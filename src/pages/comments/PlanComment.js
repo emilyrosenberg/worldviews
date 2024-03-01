@@ -27,7 +27,7 @@ const PlanComment = (props) => {
 
   const handleDelete = async () => {
     try {
-      await axiosRes.delete(`/comments/${id}/`);
+      await axiosRes.delete(`/plan_comments/${id}/`);
       setPlan((prevPlan) => ({
         results: [
           {

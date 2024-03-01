@@ -6,7 +6,7 @@ import { axiosRes } from "../../api/axiosDefaults";
 import styles from "../../styles/CommentCreateEditForm.module.css";
 
 function PlanCommentEditForm(props) {
-  const { id, content, setShowEditForm, setPlanComments } = props;
+  const { id, content, setShowPlanEditForm, setPlanComments } = props;
 
   const [formContent, setFormContent] = useState(content);
 
@@ -32,7 +32,7 @@ function PlanCommentEditForm(props) {
             : plan_comment;
         }),
       }));
-      setShowEditForm(false);
+      setShowPlanEditForm(false);
     } catch (err) {
       console.log(err);
     }
@@ -52,7 +52,7 @@ function PlanCommentEditForm(props) {
       <div className="text-right">
         <button
           className={styles.Button}
-          onClick={() => setShowEditForm(false)}
+          onClick={() => setShowPlanEditForm(false)}
           type="button"
         >
           cancel
