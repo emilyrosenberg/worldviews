@@ -57,16 +57,16 @@ const Plan = (props) => {
           </div>
         </Media>
       </Card.Body>
-      <Card.Body>
-        {title && <Card.Title className="text-center">{title}</Card.Title>}
-        {content && <Card.Text>{content}</Card.Text>}
-        <div className="styles.Planbar">
-        <Link to={`/plans/${id}`}>
-            <i className="far fa-comments" />
-          </Link>
-          {comments_count}
-        </div>
-      </Card.Body>
+      <Link to={`/plans/${id}`}>
+        <Card.Body>
+          {title && <Card.Title className="text-center">{title}</Card.Title>}
+          {content && <Card.Text>{content}</Card.Text>}
+          <div className="styles.Planbar">
+              <i className="far fa-comments" />
+            {comments_count}
+          </div>
+        </Card.Body>
+      </Link>
     </Card>
   );
 };

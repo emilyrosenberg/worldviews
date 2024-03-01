@@ -16,7 +16,7 @@ import InfiniteScroll from "react-infinite-scroll-component";
 import { fetchMoreData } from "../../utils/utils";
 import PopularProfiles from "../profiles/PopularProfiles";
 
-function PlansPage( { message, filter = "" }) {
+function PlansPage({ message, filter = "" }) {
   const [plans, setPlans] = useState({ results: [] });
   const [hasLoaded, setHasLoaded] = useState(false);
   const { pathname } = useLocation();
@@ -37,7 +37,7 @@ function PlansPage( { message, filter = "" }) {
     setHasLoaded(false);
     const timer = setTimeout(() => {
       fetchPlans();
-    }, 1000)
+    }, 1000);
     return () => {
       clearTimeout(timer)
     }
@@ -49,7 +49,6 @@ function PlansPage( { message, filter = "" }) {
     <Row className="h-100">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
-
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
@@ -75,7 +74,7 @@ function PlansPage( { message, filter = "" }) {
                 }
                 dataLength={plans.results.length}
                 loader={<Asset spinner />}
-                hasMore={!!postMessage.next}
+                hasMore={!!plans.next}
                 next={() => fetchMoreData(plans, setPlans)}
                 />
               
