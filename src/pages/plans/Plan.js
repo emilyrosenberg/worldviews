@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../../styles/Plan.module.css";
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
-import { Card, Media } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import Media from "react-bootstrap/Media";
 import { Link } from "react-router-dom";
 import Avatar from "../../components/Avatar";
 import { MoreDropdown } from "../../components/MoreDropdown";
@@ -17,7 +18,7 @@ const Plan = (props) => {
     title,
     content,
     updated_at,
-    comments_count,
+    plan_comments_count,
     planPage,
   } = props;
 
@@ -61,9 +62,9 @@ const Plan = (props) => {
         <Card.Body>
           {title && <Card.Title className="text-center">{title}</Card.Title>}
           {content && <Card.Text>{content}</Card.Text>}
-          <div className="styles.Planbar">
+          <div className="styles.PlanBar">
               <i className="far fa-comments" />
-            {comments_count}
+            {plan_comments_count}
           </div>
         </Card.Body>
       </Link>

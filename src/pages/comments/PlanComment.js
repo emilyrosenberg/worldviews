@@ -32,7 +32,7 @@ const PlanComment = (props) => {
         results: [
           {
             ...prevPlan.results[0],
-            comments_count: prevPlan.results[0].comments_count - 1,
+            plan_comments_count: prevPlan.results[0].plan_comments_count - 1,
           },
         ],
       }));
