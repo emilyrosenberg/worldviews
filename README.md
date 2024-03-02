@@ -249,6 +249,13 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
   - I checked the link in the Plans.js page
   - I realized that I had typed `$(id)` instead of `${id}`
   - I fixed the typo and it worked perfectly
+- Database not connecting properly
+  - In the deployed version of the Django admin panel I could see the correct content, but on the server I only had content that I had made at the beginning of the project in Django admin.
+  - Tutoring helped me figure out that the backend was still connected to sqlite.
+  - In settings.py I changed DEV to DEV_DB, and the correct content was visible on the server.
+  - I also needed to migrate social and social accounts to the correct database.
+- Models not showing up in Django admin
+  - I found the answer [here](https://stackoverflow.com/questions/2984987/model-not-showing-up-in-django-admin) and registered the models.
 
 ## Future Implementations
 <!-- There are many features that will improve the user's experience of the current web app. 
