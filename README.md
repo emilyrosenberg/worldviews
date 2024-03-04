@@ -385,13 +385,11 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 
 ## Credits
 ### Content
-<!-- - The content and branding of the site are designed to provide support and ideas for users who are interested in unconventional baking. The tone is warm and open, letting users know they are welcome and encouraging them to participate in the community.
-- All recipe content is posted by users. The content that I have posted here is from my own grain-free recipe development project. -->
+- The list of cities is from Google.
 ### Media
-<!-- - The recipe images are either my personal photos or open source photos from [Unsplash](https://unsplash.com/).
-- The social media icons are from [UXWing](https://uxwing.com/). -->
+- The profile images and post images are from [Unsplash](https://unsplash.com/).
 ### Thank you
-- This project was developed using the [Code Institute Moments walkthrough](). I used this tutorial as inspiration on the entire project.
+- This project was developed using the [Code Institute Moments walkthrough](). I used this tutorial as inspiration for the entire project.
 - The project was also inspired by 
 [Ronja Sjögren's Pet Palace PP5 project](https://github.com/Ajn0r/pet-palace).
 - More inspo came from [Sandra Bergstrom's Travel Tickr](https://github.com/SandraBergstrom/travel-tickr).
