@@ -14,6 +14,7 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
+import DropdownList from "./DropdownList";
 
 function PlanCreateForm() {
   useRedirect("loggedOut");
@@ -54,6 +55,23 @@ function PlanCreateForm() {
 
   const textFields = (
     <div className="text-center">
+      <Form.Group>
+        <Form.Label>Location Dropdown</Form.Label>
+        {/* <DropdownList/> */}
+        {/* <Form.Control
+          as="textarea"
+          rows={6}
+          name="content"
+          value={content}
+          onChange={handleChange}
+        /> */}
+      </Form.Group>
+      {errors?.content?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control
