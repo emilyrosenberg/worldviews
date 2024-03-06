@@ -43,54 +43,38 @@
 // export default DropdownList
 
 // This dropdown menu code is inspired by https://stackoverflow.com/questions/72301355/how-to-populate-select-options-from-an-api-call-in-react-js-on-page-load
+// And this was helpful for fetching data from objects rather than arrays: https://rapidapi.com/guides/axios-async-await
 
-import { Form } from "react-bootstrap";
-// import { Field, ErrorMessage } from 'formik';
+import Form from "react-bootstrap/Form";
+// import Alert from "react-bootstrap/Alert";
 import axios from "axios";
 import { useEffect, useState } from 'react';
-// import Alert from "react-bootstrap/Alert";
+
 
 function DropdownList(props) {
   const [locations, setLocation] = useState([]);
 
   useEffect(() => {
-    // async function fetchData() {
-    //   // Fetch data
-    //   const { data } = await axios.get("https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations");
-    //   const results = []
-    //   // Store results in the results array
-    //   data.forEach((location) => {
-    //     results.push({
-    //       key: location.name,
-    //       value: location.id,
-    //     });
-    //   });
-
-
-    // Testing
     async function fetchData() {
-      // try {
-        // Fetch data
-        const response = await axios.get("https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations");
+    // Fetch data from objects in API
+      const response = await axios.get(
+        "https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations"
+      );
+      const results = response.data.results; 
+
+      const allLocations = results.map(location => ({
+        key: location.name,
+        value: location.location_id
+      }));
     
-        const results = response.data.results; // Accessing the results field
-    
-        const allLocations = results.map(location => ({
-          key: location.name,
-          value: location.location_id
-        }));
-    
-        // Update the options state
-        setLocation([
-          { key: 'Select a location', value: '' },
-          ...allLocations
-        ]);
-      // } catch (error) {
-      //   console.error("Error fetching locations:", error);
-      // }
+      // Update the options state
+      setLocation([
+        { key: 'Select a location', value: '' },
+        ...allLocations
+      ]);
     }
 
-    // Trigger the fetch
+    // Trigger fetch
     fetchData();
   }, []);
 
@@ -108,12 +92,6 @@ function DropdownList(props) {
           );
         })}
       </div>
-      {/* <ErrorMessage className="text-danger" name={name} component={Form.Text} /> */}
-      {/* {errors?.content?.map((message, idx) => (
-        <Alert variant="warning" key={idx}>
-          {message}
-        </Alert>
-      ))} */}
     </Form.Group>
   );
 }
