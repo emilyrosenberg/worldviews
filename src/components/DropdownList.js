@@ -42,6 +42,7 @@
 
 // export default DropdownList
 
+
 // This dropdown menu code is inspired by https://stackoverflow.com/questions/72301355/how-to-populate-select-options-from-an-api-call-in-react-js-on-page-load
 // And this was helpful for fetching data from objects rather than arrays: https://rapidapi.com/guides/axios-async-await
 
@@ -82,8 +83,8 @@ function DropdownList(props) {
 
   return (
     <Form.Group className="mb-2">
-      <Form.Label htmlFor={name}>{label}</Form.Label>
-      <div id={name} name={name} {...rest} as={Form.Select}>
+      {/* <Form.Label htmlFor={name}>{label}</Form.Label> */}
+      <Form.Control as="select" id={name} name={name} {...rest}>
         {locations.map((location) => {
           return (
             <option key={location.value} value={location.value}>
@@ -91,7 +92,7 @@ function DropdownList(props) {
             </option>
           );
         })}
-      </div>
+      </Form.Control>
     </Form.Group>
   );
 }

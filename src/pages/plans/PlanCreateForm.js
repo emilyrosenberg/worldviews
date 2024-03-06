@@ -56,13 +56,12 @@ function PlanCreateForm() {
   const textFields = (
     <div className="text-center">
       <Form.Group>
-        <Form.Label>Location Dropdown</Form.Label>
+        <Form.Label>Location</Form.Label>
         <DropdownList/>
         {/* <Form.Control
-          as="textarea"
-          rows={6}
-          name="content"
-          value={content}
+          as="select"
+          name="location"
+          value={location}
           onChange={handleChange}
         /> */}
       </Form.Group>
