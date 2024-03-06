@@ -15,7 +15,7 @@ const Plan = (props) => {
     owner,
     profile_id,
     profile_image,
-    location,
+    location_name,
     title,
     content,
     updated_at,
@@ -61,7 +61,7 @@ const Plan = (props) => {
       </Card.Body>
       <Link to={`/plans/${id}`}>
         <Card.Body>
-          {location && <Card.Text className="text-center">{location}</Card.Text>}
+          {location_name && <Card.Text className="text-center">{location_name}</Card.Text>}
           {title && <Card.Title className="text-center">{title}</Card.Title>}
           {content && <Card.Text>{content}</Card.Text>}
           <div className="styles.PlanBar">
