@@ -83,7 +83,6 @@ function DropdownList(props) {
 
   return (
     <Form.Group className="mb-2">
-      {/* <Form.Label htmlFor={name}>{label}</Form.Label> */}
       <Form.Control as="select" id={name} name={name} {...rest}>
         {locations.map((location) => {
           return (

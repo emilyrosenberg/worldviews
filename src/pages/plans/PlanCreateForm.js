@@ -23,8 +23,9 @@ function PlanCreateForm() {
   const [postData, setPostData] = useState({
     title: "",
     content: "",
+    location: "",
   });
-  const { title, content } = postData;
+  const { title, content, location } = postData;
 
   const history = useHistory();
 
@@ -41,6 +42,7 @@ function PlanCreateForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("location", location);
 
     try {
       const { data } = await axiosReq.post("/plans/", formData);
@@ -57,15 +59,13 @@ function PlanCreateForm() {
     <div className="text-center">
       <Form.Group>
         <Form.Label>Location</Form.Label>
-        <DropdownList/>
-        {/* <Form.Control
-          as="select"
+        <DropdownList
           name="location"
           value={location}
           onChange={handleChange}
-        /> */}
+        />
       </Form.Group>
-      {errors?.content?.map((message, idx) => (
+      {errors?.location?.map((message, idx) => (
         <Alert variant="warning" key={idx}>
           {message}
         </Alert>
