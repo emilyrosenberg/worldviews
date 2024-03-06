@@ -14,7 +14,7 @@ import btnStyles from "../../styles/Button.module.css";
 import { useHistory } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
 import { useRedirect } from "../../hooks/useRedirect";
-// import { DropdownList } from "../../components/DropdownList";
+import DropdownList from "../../components/DropdownList";
 
 function PlanCreateForm() {
   useRedirect("loggedOut");
@@ -57,7 +57,7 @@ function PlanCreateForm() {
     <div className="text-center">
       <Form.Group>
         <Form.Label>Location Dropdown</Form.Label>
-        {/* <DropdownList/> */}
+        <DropdownList/>
         {/* <Form.Control
           as="textarea"
           rows={6}

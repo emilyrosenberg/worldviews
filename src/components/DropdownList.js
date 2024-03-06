@@ -42,7 +42,7 @@
 
 // export default DropdownList
 
-// from https://stackoverflow.com/questions/72301355/how-to-populate-select-options-from-an-api-call-in-react-js-on-page-load
+// This dropdown menu code is inspired by https://stackoverflow.com/questions/72301355/how-to-populate-select-options-from-an-api-call-in-react-js-on-page-load
 
 import { Form } from "react-bootstrap";
 // import { Field, ErrorMessage } from 'formik';
@@ -54,22 +54,40 @@ function DropdownList(props) {
   const [locations, setLocation] = useState([]);
 
   useEffect(() => {
+    // async function fetchData() {
+    //   // Fetch data
+    //   const { data } = await axios.get("https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations");
+    //   const results = []
+    //   // Store results in the results array
+    //   data.forEach((location) => {
+    //     results.push({
+    //       key: location.name,
+    //       value: location.id,
+    //     });
+    //   });
+
+
+    // Testing
     async function fetchData() {
-      // Fetch data
-      const { data } = await axios.get("https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations");
-      const results = []
-      // Store results in the results array
-      data.forEach((value) => {
-        results.push({
+      // try {
+        // Fetch data
+        const response = await axios.get("https://worldviews-api1-2fa5e8a86642.herokuapp.com/locations");
+    
+        const results = response.data.results; // Accessing the results field
+    
+        const allLocations = results.map(location => ({
           key: location.name,
-          value: location.id,
-        });
-      });
-      // Update the options state
-      setLocation([
-        {key: 'Select a location', value: ''}, 
-        ...results
-      ])
+          value: location.location_id
+        }));
+    
+        // Update the options state
+        setLocation([
+          { key: 'Select a location', value: '' },
+          ...allLocations
+        ]);
+      // } catch (error) {
+      //   console.error("Error fetching locations:", error);
+      // }
     }
 
     // Trigger the fetch
