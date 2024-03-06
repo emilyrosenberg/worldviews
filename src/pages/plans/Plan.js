@@ -61,7 +61,7 @@ const Plan = (props) => {
       </Card.Body>
       <Link to={`/plans/${id}`}>
         <Card.Body>
-          {location && <Card.Location className="text-center">{location}</Card.Location>}
+          {location && <Card.Text className="text-center">{location}</Card.Text>}
           {title && <Card.Title className="text-center">{title}</Card.Title>}
           {content && <Card.Text>{content}</Card.Text>}
           <div className="styles.PlanBar">
