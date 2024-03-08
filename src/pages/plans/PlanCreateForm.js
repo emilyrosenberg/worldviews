@@ -20,18 +20,18 @@ function PlanCreateForm() {
   useRedirect("loggedOut");
   const [errors, setErrors] = useState({});
 
-  const [postData, setPostData] = useState({
+  const [planData, setPlanData] = useState({
     title: "",
     content: "",
     location: "",
   });
-  const { title, content, location } = postData;
+  const { title, content, location } = planData;
 
   const history = useHistory();
 
   const handleChange = (event) => {
-    setPostData({
-      ...postData,
+    setPlanData({
+      ...planData,
       [event.target.name]: event.target.value,
     });
   };

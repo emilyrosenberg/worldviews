@@ -22,6 +22,7 @@ function PlanEditForm() {
   const [planData, setPlanData] = useState({
     title: "",
     content: "",
+    location: "",
   });
   const { title, content, location } = planData;
 
@@ -32,9 +33,9 @@ function PlanEditForm() {
     const handleMount = async () => {
       try {
         const { data } = await axiosReq.get(`/plans/${id}/`);
-        const { title, content, is_owner } = data;
+        const { title, content, location, is_owner } = data;
 
-        is_owner ? setPlanData({ title, content }) : history.push("/");
+        is_owner ? setPlanData({ title, content, location }) : history.push("/");
       } catch (err) {
         console.log(err);
       }
@@ -84,7 +85,6 @@ function PlanEditForm() {
           {message}
         </Alert>
       ))}
-      
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control
