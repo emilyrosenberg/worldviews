@@ -13,6 +13,7 @@ import btnStyles from "../../styles/Button.module.css";
 
 import { useHistory, useParams } from "react-router";
 import { axiosReq } from "../../api/axiosDefaults";
+import DropdownList from "../../components/DropdownList";
 
 function PlanEditForm() {
   
@@ -22,7 +23,7 @@ function PlanEditForm() {
     title: "",
     content: "",
   });
-  const { title, content } = planData;
+  const { title, content, location } = planData;
 
   const history = useHistory();
   const { id } = useParams();
@@ -55,6 +56,7 @@ function PlanEditForm() {
 
     formData.append("title", title);
     formData.append("content", content);
+    formData.append("location", location);
 
     try {
       await axiosReq.put(`/plans/${id}`, formData);
@@ -69,6 +71,20 @@ function PlanEditForm() {
 
   const textFields = (
     <div className="text-center">
+      <Form.Group>
+      <Form.Label>Location</Form.Label>
+        <DropdownList
+          name="location"
+          value={location}
+          onChange={handleChange}
+        />
+      </Form.Group>
+      {errors?.location?.map((message, idx) => (
+        <Alert variant="warning" key={idx}>
+          {message}
+        </Alert>
+      ))}
+      
       <Form.Group>
         <Form.Label>Title</Form.Label>
         <Form.Control
