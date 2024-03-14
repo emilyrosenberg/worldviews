@@ -18,6 +18,7 @@ import PlanCreateForm from "./pages/plans/PlanCreateForm";
 import PlanPage from "./pages/plans/PlanPage.js";
 import PlansPage from "./pages/plans/PlansPage.js";
 import PlanEditForm from "./pages/plans/PlanEditForm";
+import AboutPage from "./pages/about/AboutPage";
 import NotFound from "./components/NotFound";
 
 function App() {
@@ -81,6 +82,7 @@ function App() {
           <Route exact path="/plans/:id" render={() => <PlanPage />} />
           <Route exact path="/plans" render={() => <PlansPage message="No results found. Adjust the search keyword." />} />
           <Route exact path="/plans/:id/edit" render={() => <PlanEditForm />} />
+          <Route exact path="/about" render={() => <AboutPage />} />
           <Route render={() => <NotFound />} />
         </Switch>
       </Container>
