@@ -50,9 +50,12 @@ function PostsPage({ message, filter = "" }) {
   }, [filter, query, pathname, currentUser]);
 
   return (
-    <Row className="h-100">
+    <Row className="h-100 mt-5">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
+        <p>
+          Worldviews is the community for everyone who loves traveling the world. It's a place to share your unique views with kind and curious new friends.
+        </p>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
