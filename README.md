@@ -8,8 +8,16 @@ A travel community for sharing experiences and recommendations
 
 Worldviews is a community web app for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.
 <br>
-This website is responsive on all devices, and designed to be appealing and intuitive. Users can...
-<!-- Add content here -->
+This website is responsive on all devices, and designed to be appealing and intuitive. Users can:
+- Create a profile
+- Follow other users
+- Post/edit/delete images and content from their travels
+- Post/edit/delete their travel plans
+- Search posts and plans
+- View all the posts and plans of others
+- Like and comment on posts and plans
+
+All user-generated content has full CRUD functionality.
 <hr>
 
 ## Table of Contents
@@ -29,8 +37,10 @@ This website is responsive on all devices, and designed to be appealing and intu
 
 ## UX
 ### User Personas
-- A world traveler who loves to take photos.
-- 
+- A world traveler who loves to take and share photos
+- An organized traveler looking for inspiration
+- A sociable traveler making plans to meet up with others
+- A curious travel daydreamer
 
 ### User Stories
 
@@ -91,16 +101,9 @@ These stories guided the development of features. To implement Agile methodology
 
 ### Structure
 #### Landing Page
-The landing page welcomes the user...
- <!-- to GFF. It has information about the site and the GFF project, and shows three recently-added recipes. The header has a navbar and search bar, and there is a footer with social media links. -->
+The landing page welcomes a new user to Worldviews with a short description of the community, all the user posts on the site, and a list of the most popular travelers. They can view the content, and have the option to sign up.
 
-<!-- **Recipe Viewing:** <br>
-#### All Recipes
-This page shows all recipes on the site.
-#### Recipe Detail
-This page shows all the information about a single recipe, including title, description, level, method, and up to 3 tags, as well as a photo and the ingredients and instructions.
-
-**Account Creation:** <br>
+<!-- *Account Creation:** <br>
 The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete recipes, plus add and view favorites.
 #### Create an Account
 This is a simple form from allauth to create a username and password, styled with crispy forms.
@@ -109,7 +112,11 @@ This is a simple form from allauth to enter username/password.
 #### Logout
 This is a simple form from allauth to confirm logout by clicking a button.
 
-**Recipe CRUD:** <br>
+**Posts**
+Followed
+Liked
+
+**Post CRUD:** <br>
 A logged-in user can:
 
 - Create a new recipe
@@ -135,24 +142,20 @@ A feedback message accompanies this user action. For future implementations, ple
 #### Favorites
 This page shows all the recipes that the user has added to their favorites.
 #### Favorite Finder
-A random recipe is pulled from all recipes. When the user searches by keyword, a recipe containing that keyword will be shown. They can then click the button to add it to their favorites.
+A random recipe is pulled from all recipes. When the user searches by keyword, a recipe containing that keyword will be shown. They can then click the button to add it to their favorites. -->
 
 **Other Pages:** <br>
 #### About
-The About page is all about Grain Free Friend's community and mission.
-#### Contact
-This is a future implementation. It will include a contact form.
-#### 403 & 404
-These pages exist and will become visible in a future implementation.
+The About page is all about the Worldviews community and mission.
+<!-- #### 404
+A custom 404 page appears when the user navigates to a page that doesn't exist. -->
 
-### Features
+<!-- ### Features
 #### Header and Navigation
 The header includes the GFF logo, navigation items, and a search bar.
 - The logo is described [below](#logo).
 - The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, Add Recipe, and an option to Logout.
-- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions.
-#### Footer
-The footer contains social media links. Social media icons were created with [UXWing](https://uxwing.com/). -->
+- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions. -->
 
 ### Features
 
@@ -161,6 +164,7 @@ The footer contains social media links. Social media icons were created with [UX
 - Avatar
 - Asset
 - More dropdown for editing and deleting
+- Dropdown list for locations
 
 #### Profiles
 #### Posts
@@ -385,18 +389,19 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 
 ## Credits
 ### Content
-- The list of cities is from Google.
+- The list of most-visited cities is from Google.
+- Other content is either from the Moments walkthrough or written by me.
 ### Media
 - The profile images and post images are from [Unsplash](https://unsplash.com/).
 ### Thank you
-- This project was developed using the [Code Institute Moments walkthrough](). I used this tutorial as inspiration for the entire project.
+- This project was developed using the Code Institute Moments walkthrough and Django REST Framework walkthrough. I used these tutorials as inspiration for the entire project.
 - The project was also inspired by 
 [Ronja Sjögren's Pet Palace PP5 project](https://github.com/Ajn0r/pet-palace).
 - More inspo came from [Sandra Bergstrom's Travel Tickr](https://github.com/SandraBergstrom/travel-tickr).
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
-- Thank you to my Code Institute mentor.
+- Thank you to my Code Institute mentor, Martina Terlevic.
 - Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks.
 - And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
 
