@@ -89,6 +89,8 @@ These stories guided the development of features. To implement Agile methodology
 #### Locations model
 - Locations page: As a user I can view all post locations so that I can get inspiration about locations
 - Locations search: As a user I can search post locations so that I can see posts about a specific location
+
+<!-- Future implementation -->
 - Popular locations: As a user I can see the most popular locations for posts, so that I know where other users are traveling and posting
 
 #### Plans model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
@@ -103,46 +105,64 @@ These stories guided the development of features. To implement Agile methodology
 #### Landing Page
 The landing page welcomes a new user to Worldviews with a short description of the community, all the user posts on the site, and a list of the most popular travelers. They can view the content, and have the option to sign up.
 
-<!-- *Account Creation:** <br>
-The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete recipes, plus add and view favorites.
-#### Create an Account
-This is a simple form from allauth to create a username and password, styled with crispy forms.
-#### Login
-This is a simple form from allauth to enter username/password.
-#### Logout
-This is a simple form from allauth to confirm logout by clicking a button.
+*Account Creation:** <br>
+The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete posts and plans, like and unlike posts and plans, and follow and unfollow other users.
+#### Create an account
+This is a simple form to create a username and password.
+#### Sign in
+This is a simple form to enter username/password.
+#### Sign out
+Click on the Sign out button to sign out.
 
 **Posts**
-Followed
-Liked
+All posts are visible on the landing page. Users can search posts by keyword. When a user creates an account and signs in, they can filter the posts that they have liked on the Likes page, and the posts of users they have followed on the Feed page.
 
 **Post CRUD:** <br>
 A logged-in user can:
 
-- Create a new recipe
-- Read posted recipes
-- Update recipes they have posted
-- Delete recipes they have posted
+- Create a new post
+- Read posts
+- Update their own posts
+- Delete their own posts
+- Comment on posts and edit/delete their comments
 
-Feedback messages follow these user actions.
+#### Add post
+This form allows the user to add a post. It includes input fields for title, content, and an image.
+#### Update post
+The user sees the same form with their post information, and can make updates in any field.
+#### Delete post
+The user can delete the post.
 
-#### Add Recipe
-This form was styled with crispy forms and allows the user to add a recipe to GFF. It includes input fields for Title, Description, Ingredients, Instructions, Level, Image, Image Description, Method, and at least one and up to three tags.
-#### Update Recipe
-The user sees the same form with their recipe information, and can make updates in any field.
-#### Delete Recipe
-The user can confirm that they want to delete the recipe.
+**Plans**
+All plans are visible on the plans page. Users can search plans by keyword.
 
-**Favorites:** <br>
+**Plans CRUD:** <br>
 A logged-in user can:
-- Save a recipe to their favorites
 
-A feedback message accompanies this user action. For future implementations, please read more [here](#future-implementations).
+- Create a new plan
+- Read plans
+- Update their own plans
+- Delete their own plans
+- Comment on plans and edit/delete their comments
 
-#### Favorites
-This page shows all the recipes that the user has added to their favorites.
-#### Favorite Finder
-A random recipe is pulled from all recipes. When the user searches by keyword, a recipe containing that keyword will be shown. They can then click the button to add it to their favorites. -->
+#### Add plan
+This form allows the user to add a post. It includes input fields for title, content, and location.
+#### Update plan
+The user sees the same form with their plan information, and can make updates in any field.
+#### Delete plan
+The user can delete the plan.
+
+**Like:** <br>
+A logged-in user can:
+- Like a post or plan
+- View their liked posts and plans on the Likes page
+- Unlike a post or plan
+
+**Follow:** <br>
+A logged-in user can:
+- Follow another user
+- View their followed users' posts in their Feed
+- Unfollow a user
 
 **Other Pages:** <br>
 #### About
@@ -150,12 +170,14 @@ The About page is all about the Worldviews community and mission.
 <!-- #### 404
 A custom 404 page appears when the user navigates to a page that doesn't exist. -->
 
-<!-- ### Features
+### Features
 #### Header and Navigation
-The header includes the GFF logo, navigation items, and a search bar.
+The header includes the Worldviews logo, navigation items, and Sign in/Sign out buttons.
 - The logo is described [below](#logo).
-- The navbar always contains Home, Recipes, and About. If the user is logged out or has no account, they can see options to Register and Login. If the user is logged in, they can see their Favorites, Add Recipe, and an option to Logout.
-- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword is in any recipe's title, description, tags, ingredients, and instructions. -->
+- The navbar always contains Home and About. If the user is logged out or has no account, they can see options to Sign Up and Sign In. If the user is logged in, they can see the Plans, Feed, Liked, and Sign out options, and their profile avatar.
+
+#### Search bar
+- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword matches any posts's title, content, or author.
 
 ### Features
 
