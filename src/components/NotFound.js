@@ -8,7 +8,7 @@ const NotFound = () => {
     <div className={styles.NotFound}>
       <Asset
         src={NoResults}
-        message={`Sorry, the page you're looking for doesn't exist`}
+        message={`We're sorry, in the whole wide world we can't find that page`}
       />
     </div>
   );

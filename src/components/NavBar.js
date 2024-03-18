@@ -94,6 +94,13 @@ const NavBar = () => {
       <NavLink
         className={styles.NavLink}
         activeClassName={styles.Active}
+        to="/about"
+      >
+        <i className="fa-solid fa-bicycle"></i>About
+      </NavLink>
+      <NavLink
+        className={styles.NavLink}
+        activeClassName={styles.Active}
         to="/signin"
       >
         <i className="fas fa-sign-in-alt"></i>Sign in
