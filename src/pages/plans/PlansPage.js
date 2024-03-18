@@ -49,7 +49,9 @@ function PlansPage({ message, filter = "" }) {
     <Row className="h-100 mt-5">
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
-        <p>Check out these amazing travel plans and add your comments and tips for your travel friends!</p>
+        <div className="text-center m-3">
+          <p>Where are folks headed next? Add your comments and tips!</p>
+        </div>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
           className={styles.SearchBar}
