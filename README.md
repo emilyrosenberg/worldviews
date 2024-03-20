@@ -40,7 +40,7 @@ All user-generated content has full CRUD functionality.
 - A world traveler who loves to take and share photos
 - An organized traveler looking for inspiration
 - A sociable traveler making plans to meet up with others
-- A curious travel daydreamer
+- A travel-curious daydreamer
 
 ### User Stories
 
@@ -211,11 +211,11 @@ These colors are currently used on the site:
 - White: #FFFAF0 -->
 
 #### Fonts
-<!-- The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). <br>
-The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). This is a bold, modern font with a rounded shape that's friendly and accessible. It was an option in the logo maker, and I decided to use it for the titles as well. <br>
-![Montserrat font](static/images/readme-images/font-montserrat.png)
-The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
-![Raleway font](static/images/readme-images/font-raleway.png) -->
+The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). <br>
+The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. <br>
+![Libre Bodoni font]()
+<!-- The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
+![Raleway font](static/images/readme-images/font-raleway.png) --> -->
 I matched the logo fonts with [Matcherator](https://www.fontspring.com/matcherator).
 
 #### Logo
@@ -250,7 +250,7 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 #### Python
 ### User Stories Testing
 ### Manual Testing
-<!-- This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari. The UX design was tested by users. -->
+This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
 ### Bugs
 - Unable to deploy backend or update Config Vars 
   - Tried [this](https://stackoverflow.com/questions/71076368/unable-to-add-update-config-variables-in-heroku) but it did not work
@@ -337,13 +337,14 @@ They are stored in and accessed through [Cloudinary](https://cloudinary.com).
 - Django
 - Github
 - Github projects [Kanban board here](https://github.com/users/emilyrosenberg/projects/7/views/1)
-<!-- - Cloudinary
-- PostgreSQL (ElephantSQL) -->
+- Cloudinary
+- PostgreSQL (ElephantSQL)
 - Heroku
 - VS Code
 - Google Chrome Dev Tools
-<!-- - Google Fonts
-- Colorpicker
+- Google Fonts
+- Matcherator
+<!-- - Colorpicker
 - UXWing -->
 - Unsplash
 - PEP8
