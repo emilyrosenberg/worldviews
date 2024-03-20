@@ -54,7 +54,7 @@ function PostsPage({ message, filter = "" }) {
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
         <div className="text-center m-3">
-          <h5>Worldviews: the community for everyone who loves traveling the world</h5>
+          <h5>The community for everyone who loves traveling the world</h5>
         </div>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
