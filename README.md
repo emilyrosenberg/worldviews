@@ -216,6 +216,7 @@ The title font is [Montserrat](https://fonts.google.com/specimen/Montserrat). Th
 ![Montserrat font](static/images/readme-images/font-montserrat.png)
 The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
 ![Raleway font](static/images/readme-images/font-raleway.png) -->
+I matched the logo fonts with [Matcherator](https://www.fontspring.com/matcherator).
 
 #### Logo
 The logo represents the Worldviews community's love of travel. Each person on earth has a unique perspective depending on their background, travel style, means of transport - maybe a bicycle! This is the place to share all these wonderful views with the world, within a kind and curious community.
