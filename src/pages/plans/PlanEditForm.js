@@ -130,7 +130,7 @@ function PlanEditForm() {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center mt-5">
         <Col md={5} lg={4} className="d-md-block p-0 p-md-2">
           <Container className={`${appStyles.Content} ${styles.Container} d-flex flex-column justify-content-center`}>{textFields}
           </Container>

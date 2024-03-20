@@ -50,7 +50,7 @@ function PlansPage({ message, filter = "" }) {
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
         <div className="text-center m-3">
-          <p>Where are folks headed next? Add your comments and tips!</p>
+          <h5>Where are we headed next? Add your comments and tips!</h5>
         </div>
         <i className={`fas fa-search ${styles.SearchIcon}`} />
         <Form
