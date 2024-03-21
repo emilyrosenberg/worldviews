@@ -246,7 +246,7 @@ The favicon was created from the logo image using the [favico.io favicon convert
 </div>
 
 #### Images
-The Sign in and Sign up images are from [Unsplash](https://unsplash.com/). They were chosen to represent the beginning of a journey, with soem of the blue color in the rest of the surface design. <br>
+The Sign in and Sign up images are from [Unsplash](https://unsplash.com/). They were chosen to represent the beginning of a journey, with some of the blue color that is present in the rest of the design. <br>
 All of the post and profile images are also from [Unsplash](https://unsplash.com/).
 <br>
 The images are stored in and accessed through [Cloudinary](https://cloudinary.com).
