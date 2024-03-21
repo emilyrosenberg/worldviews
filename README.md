@@ -1,9 +1,6 @@
 # Worldviews
-
-A travel community for sharing experiences and recommendations
-
 <div align="center">
-  <img src="" alt="Mockup on different devices, created with Techsini." width="">
+  <img src="src/assets/readme images/mockup.png" alt="Mockup on different devices, created with Techsini." width="">
 </div>
 
 Worldviews is a community web app for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.
@@ -17,7 +14,7 @@ This website is responsive on all devices, and designed to be appealing and intu
 - View all the posts and plans of others
 - Like and comment on posts and plans
 
-All user-generated content has full CRUD functionality.
+All user-generated content has full CRUD functionality. The live site can be visited [here](https://worldviews-162453e10c7f.herokuapp.com/).
 <hr>
 
 ## Table of Contents
@@ -90,9 +87,6 @@ These stories guided the development of features. To implement Agile methodology
 - Locations page: As a user I can view all post locations so that I can get inspiration about locations
 - Locations search: As a user I can search post locations so that I can see posts about a specific location
 
-<!-- Future implementation -->
-- Popular locations: As a user I can see the most popular locations for posts, so that I know where other users are traveling and posting
-
 #### Plans model (inspired by [Pet Palace](https://github.com/Ajn0r/pet-palace) Ads model)
 - Create plan: As a logged-in user I can create a plan so that I can ask other users for info about a location
 - Manage plan: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request
@@ -105,16 +99,19 @@ These stories guided the development of features. To implement Agile methodology
 #### Landing Page
 The landing page welcomes a new user to Worldviews with a short description of the community, all the user posts on the site, and a list of the most popular travelers. They can view the content, and have the option to sign up.
 
-*Account Creation:** <br>
+**Account Creation** <br>
 The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete posts and plans, like and unlike posts and plans, and follow and unfollow other users.
+
 #### Create an account
 This is a simple form to create a username and password.
+
 #### Sign in
 This is a simple form to enter username/password.
+
 #### Sign out
 Click on the Sign out button to sign out.
 
-**Posts**
+**Posts** <br>
 All posts are visible on the landing page. Users can search posts by keyword. When a user creates an account and signs in, they can filter the posts that they have liked on the Likes page, and the posts of users they have followed on the Feed page.
 
 **Post CRUD:** <br>
@@ -128,12 +125,14 @@ A logged-in user can:
 
 #### Add post
 This form allows the user to add a post. It includes input fields for title, content, and an image.
+
 #### Update post
 The user sees the same form with their post information, and can make updates in any field.
+
 #### Delete post
 The user can delete the post.
 
-**Plans**
+**Plans** <br>
 All plans are visible on the plans page. Users can search plans by keyword.
 
 **Plans CRUD:** <br>
@@ -147,8 +146,10 @@ A logged-in user can:
 
 #### Add plan
 This form allows the user to add a post. It includes input fields for title, content, and location.
+
 #### Update plan
 The user sees the same form with their plan information, and can make updates in any field.
+
 #### Delete plan
 The user can delete the plan.
 
@@ -166,9 +167,10 @@ A logged-in user can:
 
 **Other Pages:** <br>
 #### About
-The About page is all about the Worldviews community and mission.
-<!-- #### 404
-A custom 404 page appears when the user navigates to a page that doesn't exist. -->
+The About page is all about the Worldviews community and mission. Users can find out about new features that are in development. In the future they will be able to send feedback.
+
+#### 404
+A custom 404 page appears when the user navigates to a page that doesn't exist.
 
 ### Features
 #### Header and Navigation
@@ -211,12 +213,11 @@ These colors are currently used on the site:
 - White: #FFFAF0 -->
 
 #### Fonts
-The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). <br>
-The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. <br>
+The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). I generated suggestions for matching the logo fonts with [Matcherator](https://www.fontspring.com/matcherator). <br>
+The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. It has a worn-in, analog style that suits the branding.<br>
 ![Libre Bodoni font]()
-<!-- The main font is [Raleway](https://fonts.google.com/specimen/Raleway). This is a friendly, readable font in a modern style. It makes the recipe ingredients and instructions very clear and accessible. <br>
-![Raleway font](static/images/readme-images/font-raleway.png) --> -->
-I matched the logo fonts with [Matcherator](https://www.fontspring.com/matcherator).
+The main font is [Lato](https://fonts.google.com/specimen/Lato). This is a modern, readable sans serif font. It gives clarity to the content. <br>
+![Lato font]()
 
 #### Logo
 The logo represents the Worldviews community's love of travel. Each person on earth has a unique perspective depending on their background, travel style, means of transport - maybe a bicycle! This is the place to share all these wonderful views with the world, within a kind and curious community.
@@ -224,14 +225,14 @@ The logo represents the Worldviews community's love of travel. Each person on ea
 The logo was made with [Looka](https://looka.com/). <br>
 
 <div align="left">
-  <img src="src/assets/logo-text.png" alt="Worldviews logo" width="300">
+  <img src="src/assets/logo-text.png" alt="Worldviews logo" width="350">
 </div>
 
 #### Favicon
 The favicon was created from the logo image using the [favico.io favicon converter](https://favicon.io/favicon-converter/). <br>
 
 <div align="left">
-  <img src="src/assets/logo-favicon.png" alt="Worldviews favicon" width="50">
+  <img src="src/assets/logo-favicon.png" alt="Worldviews favicon" width="75">
 </div>
 
 #### Images
@@ -285,17 +286,16 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - I found the answer [here](https://stackoverflow.com/questions/2984987/model-not-showing-up-in-django-admin) and registered the models.
 
 ## Future Implementations
-<!-- There are many features that will improve the user's experience of the current web app. 
-- User can delete favorites. The CRUD functionality of the favorites app will be updated to include deleting favorites as well as adding them.
-- User can add and delete favorites from the recipe detail page.
-- User can comment on recipes. The comments will have CRUD functionality.
-- User can filter a search by tag. This will also involve creating tags, instead of the placeholder fix in the current version.
-- Require admin approval for user-submitted recipes and comments. the user can submit a recipe, and when it is approved, it will be published.
-- Add contact form. As a placeholder, the Contact button on the About page currently links to Facebook's home page.
-- Make custom 403 and 404 pages visible.
-- Custom feedback messages.
-- Update styling and visual appeal.
-- Content. My grain-free recipe development project is ongoing. -->
+- Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information.
+- Feedback messages: Users will get a feedback popup when engaging with features on the site.
+- Contact form: The user will be able to fill out and submit a contact form.
+- Surface: Update styling, branding, and visual appeal.
+- Popular locations: The user will be able to see the most popular locations for posts, so that they know where other users are traveling and posting.
+- Plan dates: Users will be able to add travel dates to their plans.
+- Messaging: Users will be able to direct-message each other as well as communicating through comments.
+- Custom locations: Users will be able to add custom locations instead of choosing from the dropdown.
+- View plans and posts by location: Users will be able to use filters to see all content about a given location.
+- Locations map: Users will be able to see all the locations on a map.
 
 ## Languages, Libraries, and Software
 ### Languages
@@ -344,8 +344,6 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - Google Chrome Dev Tools
 - Google Fonts
 - Matcherator
-<!-- - Colorpicker
-- UXWing -->
 - Unsplash
 - PEP8
 - W3C - HTML
