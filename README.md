@@ -32,6 +32,8 @@ All user-generated content has full CRUD functionality. The live site can be vis
 - [Deployment](#deployment)
 - [Credits](#credits)
 
+<hr>
+
 ## UX
 ### User Personas
 - A world traveler who loves to take and share photos
@@ -101,15 +103,9 @@ The landing page welcomes a new user to Worldviews with a short description of t
 
 **Account Creation** <br>
 The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete posts and plans, like and unlike posts and plans, and follow and unfollow other users.
-
-#### Create an account
-This is a simple form to create a username and password.
-
-#### Sign in
-This is a simple form to enter username/password.
-
-#### Sign out
-Click on the Sign out button to sign out.
+- Create an account: This is a simple form to create a username and password.
+- Sign in: This is a simple form to enter username/password.
+- Sign out: Click on the Sign out button to sign out.
 
 **Posts** <br>
 All posts are visible on the landing page. Users can search posts by keyword. When a user creates an account and signs in, they can filter the posts that they have liked on the Likes page, and the posts of users they have followed on the Feed page.
@@ -123,15 +119,6 @@ A logged-in user can:
 - Delete their own posts
 - Comment on posts and edit/delete their comments
 
-#### Add post
-This form allows the user to add a post. It includes input fields for title, content, and an image.
-
-#### Update post
-The user sees the same form with their post information, and can make updates in any field.
-
-#### Delete post
-The user can delete the post.
-
 **Plans** <br>
 All plans are visible on the plans page. Users can search plans by keyword.
 
@@ -143,15 +130,6 @@ A logged-in user can:
 - Update their own plans
 - Delete their own plans
 - Comment on plans and edit/delete their comments
-
-#### Add plan
-This form allows the user to add a post. It includes input fields for title, content, and location.
-
-#### Update plan
-The user sees the same form with their plan information, and can make updates in any field.
-
-#### Delete plan
-The user can delete the plan.
 
 **Like:** <br>
 A logged-in user can:
@@ -184,33 +162,63 @@ The header includes the Worldviews logo, navigation items, and Sign in/Sign out 
 ### Features
 
 #### Reusable components
-- Navbar
-- Avatar
-- Asset
-- More dropdown for editing and deleting
-- Dropdown list for locations
+- Navbar: The navbar appears on every page.
+- Avatar: This is the user's profile image.
+- Asset: This is an animated spinner that shows when a component is loading.
+- More dropdown for editing and deleting: This dropdown menu is used for posts and plans.
+- Dropdown list for locations: This dropdown menu contains all the locations and is used for plans. In the future it will be used for posts as well, and to filter the locations page.
 
 #### Profiles
-#### Posts
-#### Plans
-#### Locations
-#### About
+- Profile creation: Users can create a profile with an image, name, and bio.
+- Profile page: Profiles show all the user's posts, and counts of how many posts and followers they have, as well as how many other users they follow.
+- Users can follow or unfollow each other from one another's profile page.
+
 #### Most popular profiles
+- The list of most popular profiles appears as a sidebar on larger screens and below the navbar on smaller screens.
+- The users with the most followers appear at the top.
+
+#### Posts
+- Each post has a large image uploaded by the user, a title, and content.
+- All the posts appear on the home page, most recent first.
+- Post search: There is a search bar for finding posts by keyword. If the word is in any part of the post, it will be filtered by the search. If not, the user will see a  no-results message. <br>
+
+For logged-in users
+- Add post form: The user can access this form in the navbar. It allows them to add a post and includes input fields for title, content, and an image.
+- Update post form: This form is accessed through the dropdown menu on a user's post. They see the same form with their post information, and can make updates in any field.
+- Delete post: The user can access this function through the dropdown menu on their post, and delete the post.
+- Comments: Users can comment on one another's posts. Comments have full CRUD functionality.
+- Feed: All posts by followed users appear in the feed.
+- Likes: Users can like and unlike one another's posts. All posts a user has liked will appear on the Likes page.
+
+#### Plans
+- Each plan has a location, a title, and content.
+- Plan search: There is a search bar for finding plans by keyword. If the word is in any part of the plan, it will be filtered by the search. If not, the user will see a  no-results message.
+- Add plan form: The user can access this form in the navbar. It allows them to add a plan and includes input fields for title, content, and location.
+- Update plan form: This form is accessed through the dropdown menu on a user's plan. They see the same form with their plan information, and can make updates in any field.
+- Delete plan: The user can access this function through the dropdown menu on their plan, and delete the plan.
+- Comments: Users can comment on one another's plans to share advice about future travel. Comments have full CRUD functionality.
+
+#### Locations
+- Users can choose a location for their plan from a dropdown menu of the most popular destinations.
+- In the future users will be able to add custom locations, and see all locations on a locations page.
+
+#### About
+- Users can read all about Worldviews. In the future there will be a contact form.
 
 ### Surface
 #### Colors
-<!-- The color palette is from [Lilybug Design](https://www.lilybugdesign.co.nz/colour-wall). I saw one of these designs used in a [PP4 project by Roshna Vakkee](https://github.com/RoshnaVakkeel/Little_Learners_Lab_Logs?tab=readme-ov-file), and found a beautiful one for my project. This palette is fresh and lively, as well as warm. It supports the Grain Free Friend branding: accessible, fun, warm, supportive. <br>
-![Color palette](static/images/readme-images/color-palette.png)
-I used colorpicker to get the HEX tags for each color. <br>
-Colors were picked with [imagecolorpicker.com](https://imagecolorpicker.com/en). <br>
-Custom black and white were chosen from [Color Meanings](https://www.color-meanings.com/) to complement the colorful palette.
+The color palette is from the Moments walkthrough project. It is a clean white and blue, with some gray, and lets the images stand out. I designed the logo in the same palette with a dynamic mix of purple and blue. In the future Worldviews will have a more sophisticated color palette based on these colors.
 
 These colors are currently used on the site:
-- Cream: #FFE9B8
-- Peach: #F9AC82
-- Red: #F1442E
-- Black: #100C08
-- White: #FFFAF0 -->
+- White: #ffffff
+- Off white: #f0f1f9
+- Black: #000000
+- Light gray: #cfced3
+- Medium gray: #7177a1
+- Gray: #242a3d
+- Blue: #2142b2
+- Purple: #535da4
+- Red: #f85032
 
 #### Fonts
 The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). I generated suggestions for matching the logo fonts with [Matcherator](https://www.fontspring.com/matcherator). <br>
