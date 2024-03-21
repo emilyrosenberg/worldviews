@@ -251,7 +251,23 @@ All of the post and profile images are also from [Unsplash](https://unsplash.com
 <br>
 The images are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
-#### Background
+#### Wireframes
+The layout and design is based on the Moments walkthrough project.
+<div align="left">
+  <img src="src/assets/readme images/landing-page1.png" alt="Landing page logged out" width="500">
+</div>
+<div align="left">
+  <img src="src/assets/readme images/landing-page2.png" alt="Landing page logged in" width="500">
+</div>
+<div align="left">
+  <img src="src/assets/readme images/plans-page.png" alt="Plans page" width="500">
+</div>
+<div align="left">
+  <img src="src/assets/readme images/profile-page.png" alt="Profile page" width="500">
+</div>
+<div align="left">
+  <img src="src/assets/readme images/about-page.png" alt="About page" width="500">
+</div>
 
 ## Testing
 #### Lighthouse
