@@ -5,6 +5,11 @@
   
   .NavLink {
     padding: 5px;
+    font-size: smaller;
+  }
+
+  .NavLink i {
+    font-size: 1.5em;
   }
   
   .Active i {
