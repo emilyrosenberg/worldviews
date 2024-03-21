@@ -1,6 +1,6 @@
 # Worldviews
 <div align="center">
-  <img src="src/assets/readme images/mockup.png" alt="Mockup on different devices, created with Techsini." width="">
+  <img src="src/assets/readme images/mockup.png" alt="Mockup on different devices, created with Techsini.">
 </div>
 
 Worldviews is a community web app for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.
@@ -219,10 +219,15 @@ These colors are currently used on the site:
 
 #### Fonts
 The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). I generated suggestions for matching the logo fonts with [Matcherator](https://www.fontspring.com/matcherator). <br>
-The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. It has a worn-in, analog style that suits the branding.<br>
-![Libre Bodoni font]()
-The main font is [Lato](https://fonts.google.com/specimen/Lato). This is a modern, readable sans serif font. It gives clarity to the content. <br>
-![Lato font]()
+The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. It has a worn-in, analog style that suits the branding.
+<div align="left">
+  <img src="src/assets/readme images/libre-bodoni-font.png" alt="Libre Bodoni font" width="350">
+</div>
+
+The main font is [Lato](https://fonts.google.com/specimen/Lato). This is a modern, readable sans serif font. It gives clarity to the content.
+<div align="left">
+  <img src="src/assets/readme images/lato-font.png" alt="Lato font" width="350">
+</div>
 
 #### Logo
 The logo represents the Worldviews community's love of travel. Each person on earth has a unique perspective depending on their background, travel style, means of transport - maybe a bicycle! This is the place to share all these wonderful views with the world, within a kind and curious community.
@@ -241,9 +246,10 @@ The favicon was created from the logo image using the [favico.io favicon convert
 </div>
 
 #### Images
-All of the post and profile images are from [Unsplash](https://unsplash.com/).
+The Sign in and Sign up images are from [Unsplash](https://unsplash.com/). They were chosen to represent the beginning of a journey, with soem of the blue color in the rest of the surface design. <br>
+All of the post and profile images are also from [Unsplash](https://unsplash.com/).
 <br>
-They are stored in and accessed through [Cloudinary](https://cloudinary.com).
+The images are stored in and accessed through [Cloudinary](https://cloudinary.com).
 
 #### Background
 
@@ -419,7 +425,7 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 ## Credits
 ### Content
 - The list of most-visited cities is from Google.
-- Other content is either from the Moments walkthrough or written by me.
+- Other content is either from the Moments walkthrough or original.
 ### Media
 - The profile images and post images are from [Unsplash](https://unsplash.com/).
 ### Thank you
