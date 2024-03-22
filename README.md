@@ -268,6 +268,14 @@ The layout and design is based on the Moments walkthrough project.
 <div align="left">
   <img src="src/assets/readme images/about-page.png" alt="About page" width="500">
 </div>
+Posts and plans are currently designed like this:
+<div align="left">
+  <img src="src/assets/readme images/post-plan.png" alt="Posts and plans" width="500">
+</div>
+Posts and plans will become more useful with future expansion of the locations model and a feature for adding travel dates to plans:
+<div align="left">
+  <img src="src/assets/readme images/post-plan-future.png" alt="Post and plan future implementations" width="500">
+</div>
 
 ## Testing
 #### Lighthouse
