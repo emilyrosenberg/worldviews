@@ -13,7 +13,7 @@ const AboutPage = () => {
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
         <div className="text-center m-3">
-          <h1>About Worldviews</h1>
+          <h2>About Worldviews</h2>
           <p>Worldviews is a home away from home for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.</p>
           <p>We started Worldviews in 2024 as a way to connect world travelers and share beautiful and inspiring posts and pictures. You can also view the most popular trailblazers, and check out the plans page to see where folks are headed next.</p>
           <h3>There's a lot more on the horizon!</h3>

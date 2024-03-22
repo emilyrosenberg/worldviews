@@ -16,7 +16,9 @@ const PopularProfiles = ({ mobile }) => {
     >
       {popularProfiles.results.length ? (
         <>
-          <h5>Worldviews trailblazers</h5>
+          <div className="m-3">
+            <h5>Worldviews trailblazers</h5>
+          </div>
           {mobile ? (
             <div className="d-flex justify-content-around">
               {popularProfiles.results.slice(0, 4).map((profile) => (

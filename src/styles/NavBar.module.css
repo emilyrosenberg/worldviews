@@ -6,6 +6,7 @@
   .NavLink {
     padding: 5px;
     font-size: smaller;
+    text-align: center;
   }
 
   .NavLink i {
