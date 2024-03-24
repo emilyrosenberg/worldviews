@@ -1,6 +1,6 @@
 # Worldviews
 <div align="center">
-  <img src="src/assets/readme images/mockup.png" alt="Mockup on different devices, created with Techsini.">
+  <img src="src/assets/readme-images/mockup.png" alt="Mockup on different devices, created with Techsini.">
 </div>
 
 Worldviews is a community web app for everyone who loves traveling the world. It's a place to share your unique views, within a kind and curious community.
@@ -159,10 +159,11 @@ The header includes the Worldviews logo, navigation items, and Sign in/Sign out 
 ### Features
 
 #### Reusable components
+This web app incorporates reuseable React components to streamline complexity so that each component's code is written only once, and to improve UX by creating a predictable experience across the web app. For instance, every time a user wants to edit or delete their own user-generated content of any kind, the process is the same.
 - Navbar: The navbar appears on every page.
-- Avatar: This is the user's profile image.
-- Asset: This is an animated spinner that shows when a component is loading.
-- More dropdown for editing and deleting: This dropdown menu is used for posts and plans.
+- Avatar: This is the user's profile image, and is used as a link to their profile everywhere on the web app.
+- Asset: This is an animated spinner that shows whenever a component is loading.
+- More dropdown for editing and deleting: This dropdown menu is used to edit or delete a user's own content in posts, plans, and comments.
 - Dropdown list for locations: This dropdown menu contains all the locations and is used for plans. In the future it will be used for posts as well, and to filter the locations page.
 
 #### Profiles
@@ -187,6 +188,11 @@ For logged-in users
 - Feed: All posts by followed users appear in the feed.
 - Likes: Users can like and unlike one another's posts. All posts a user has liked will appear on the Likes page.
 
+Note: The post content was created with popular locations in mind, so that the locations model can be implemented and tested more easily in the future:
+<div align="left">
+  <img src="src/assets/readme-images/post-location-files.png" alt="Lato font" width="350">
+</div>
+
 #### Plans
 - Each plan has a location, a title, and content.
 - Plan search: There is a search bar for finding plans by keyword. If the word is in any part of the plan, it will be filtered by the search. If not, the user will see a  no-results message.
@@ -204,7 +210,7 @@ For logged-in users
 
 ### Surface
 #### Colors
-The color palette is from the Moments walkthrough project. It is a clean white and blue, with some gray, and lets the images stand out. I designed the logo in the same palette with a dynamic mix of purple and blue. In the future Worldviews will have a more sophisticated color palette based on these colors.
+The color palette is from the Moments walkthrough project. It is a clean white and blue, with some gray, and lets the images shine. In order to create a minimum viable product, I designed the logo in the same palette with a dynamic mix of purple and blue. In the future Worldviews will have a more sophisticated color palette based on these colors.
 
 These colors are currently used on the site:
 - White: #ffffff
@@ -221,12 +227,12 @@ These colors are currently used on the site:
 The fonts used in this project are implemented as a url from [Google Fonts](https://fonts.google.com/). I generated suggestions for matching the logo fonts with [Matcherator](https://www.fontspring.com/matcherator). <br>
 The title font is [Libre Bodoni](https://fonts.google.com/specimen/Libre+Bodoni). The logo has a similar font, and I decided to use it for the titles. It has a worn-in, analog style that suits the branding.
 <div align="left">
-  <img src="src/assets/readme images/libre-bodoni-font.png" alt="Libre Bodoni font" width="350">
+  <img src="src/assets/readme-images/libre-bodoni-font.png" alt="Libre Bodoni font" width="350">
 </div>
 
 The main font is [Lato](https://fonts.google.com/specimen/Lato). This is a modern, readable sans serif font. It gives clarity to the content.
 <div align="left">
-  <img src="src/assets/readme images/lato-font.png" alt="Lato font" width="350">
+  <img src="src/assets/readme-images/lato-font.png" alt="Lato font" width="350">
 </div>
 
 #### Logo
@@ -254,28 +260,31 @@ The images are stored in and accessed through [Cloudinary](https://cloudinary.co
 #### Wireframes
 The layout and design is based on the Moments walkthrough project.
 <div align="left">
-  <img src="src/assets/readme images/landing-page1.png" alt="Landing page logged out" width="500">
+  <img src="src/assets/readme-images/landing-page1.png" alt="Landing page logged out" width="500">
 </div>
 <div align="left">
-  <img src="src/assets/readme images/landing-page2.png" alt="Landing page logged in" width="500">
+  <img src="src/assets/readme-images/landing-page2.png" alt="Landing page logged in" width="500">
 </div>
 <div align="left">
-  <img src="src/assets/readme images/plans-page.png" alt="Plans page" width="500">
+  <img src="src/assets/readme-images/plans-page.png" alt="Plans page" width="500">
 </div>
 <div align="left">
-  <img src="src/assets/readme images/profile-page.png" alt="Profile page" width="500">
+  <img src="src/assets/readme-images/profile-page.png" alt="Profile page" width="500">
 </div>
 <div align="left">
-  <img src="src/assets/readme images/about-page.png" alt="About page" width="500">
+  <img src="src/assets/readme-images/about-page.png" alt="About page" width="500">
 </div>
 Posts and plans are currently designed like this:
 <div align="left">
-  <img src="src/assets/readme images/post-plan.png" alt="Posts and plans" width="500">
+  <img src="src/assets/readme-images/post-plan.png" alt="Posts and plans" width="500">
 </div>
 Posts and plans will become more useful with future expansion of the locations model and a feature for adding travel dates to plans:
 <div align="left">
-  <img src="src/assets/readme images/post-plan-future.png" alt="Post and plan future implementations" width="500">
+  <img src="src/assets/readme-images/post-plan-future.png" alt="Post and plan future implementations" width="500">
 </div>
+
+#### Screenshots
+<!-- The website looks like this -->
 
 ## Testing
 #### Lighthouse
