@@ -27,6 +27,7 @@ All user-generated content has full CRUD functionality. The live site can be vis
   - [Features](#features)
   - [Surface](#surface)
 - [Testing](#testing)
+  - [Bugs](#bugs)
 - [Future Implementations](#future-implementations)
 - [Languages, Libraries, and Software](#languages-libraries-and-software)
 - [Deployment](#deployment)
@@ -101,7 +102,7 @@ These stories guided the development of features. To implement Agile methodology
 The landing page welcomes a new user to Worldviews with a short description of the community, all the user posts on the site, and a list of the most popular travelers. They can view the content, and have the option to sign up.
 
 **Account Creation** <br>
-The user can create an account with a username and password. This functionality comes from allauth. They can then log in, log out, create, update, and delete posts and plans, like and unlike posts and plans, and follow and unfollow other users.
+The user can create an account with a username and password. They can then log in, log out, create, update, and delete posts and plans, like and unlike posts and plans, and follow and unfollow other users.
 - Create an account: This is a simple form to create a username and password.
 - Sign in: This is a simple form to enter username/password.
 - Sign out: Click on the Sign out button to sign out.
@@ -288,14 +289,26 @@ Posts and plans will become more useful with future expansion of the locations m
 
 ## Testing
 #### Lighthouse
+Desktop results:
+<div align="left">
+  <img src="src/assets/readme-images/lighthouse-desktop.png" alt="Desktop lighthouse results" width="350">
+</div>
+Mobile results:
+<div align="left">
+  <img src="src/assets/readme-images/lighthouse-mobile.png" alt="Mobile lighthouse results" width="350">
+</div>
+
 ### Code Validation
 #### HTML
 #### CSS
 #### Javascript
 #### Python
 ### User Stories Testing
+All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in a future sprint.
+
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
+
 ### Bugs
 - Unable to deploy backend or update Config Vars 
   - Tried [this](https://stackoverflow.com/questions/71076368/unable-to-add-update-config-variables-in-heroku) but it did not work
@@ -358,19 +371,8 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - Javascript
 - Python
 ### Modules and Packages
-<!-- - black (python formatter)
-- cloudinary (image hosting)
-- crispy-bootstrap5
-- dj-database-url
-- django-allauth (authorization package)
-- django-cloudinary-storage
-- django-resized (resizes a photo submitted in the form)
-- django-richtextfield (allows markdown styling in input fields)
-- gunicorn (server for WSGI applications)
-- psycopg2
-- whitenoise (allows static files to load in deployed app) -->
-
 - axios
+- black (python formatter)
 - bootstrap
 - jwt-decode
 - react
