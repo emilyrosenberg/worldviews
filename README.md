@@ -328,6 +328,14 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - I also needed to migrate social and social accounts to the correct database.
 - Models not showing up in Django admin
   - I found the answer [here](https://stackoverflow.com/questions/2984987/model-not-showing-up-in-django-admin) and registered the models.
+- Search bar for Plans not working
+  - The spinner was visible but no results appeared
+  - There was a server (500) error
+  - I cleared the cache and double-checked the tutorial against the Posts search bar.
+  - Tutoring another error that showed "iconstant" but this appeared nowhere in any code.
+  - It turned out to be a problem in the backend: in plans/views.py search_fields, `location` needed to be changed to `location__name` in order to find the results in the locations model.
+  - This fixed the problem.
+  - Tutoring also suggested that I add currentUser to PlansPage.js as it is in PostsPage.js, and I did this and left it in the code although I think it might not be necessary.
 
 ## Future Implementations
 - Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information.
@@ -341,6 +349,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - Custom locations: Users will be able to add custom locations instead of choosing from the dropdown.
 - View plans and posts by location: Users will be able to use filters to see all content about a given location.
 - Locations map: Users will be able to see all the locations on a map.
+- Improved search: Search function will include more of the fields in posts and plans, for instance content as well as title, location, etc.
 
 ## Languages, Libraries, and Software
 ### Languages
