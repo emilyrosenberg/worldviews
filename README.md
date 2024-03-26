@@ -300,9 +300,20 @@ Mobile results:
 
 ### Code Validation
 #### HTML
+A check with the [W3C Markup Validator](https://validator.w3.org/) showed trailing slashes in index.html. I removed them and re-ran the test. There are no errors or warnings.
+<div align="left">
+  <img src="src/assets/readme-images/testing-html.png" alt="Trailing slash info" width="350">
+</div>
+
 #### CSS
+A check with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) showed no errors.
+
 #### Javascript
+
+
 #### Python
+Python code was formatted with black.
+
 ### User Stories Testing
 All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in a future sprint.
 
@@ -402,7 +413,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - Matcherator
 - Color Picker
 - Unsplash
-- PEP8
+<!-- - PEP8 -->
 - W3C - HTML
 - W3C - CSS
 
