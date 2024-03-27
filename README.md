@@ -289,6 +289,8 @@ Posts and plans will become more useful with future expansion of the locations m
 
 ## Testing
 #### Lighthouse
+The Performance scores are low because of the images sizes plus a slow internet connection. Another reason is the API page size, which I lengthened to 50 as a temporary bug fix for the locations model dropdown list. In the future the API page size will be returned to the original size of 10, making use of infinite scroll. This will improve performance.
+
 Desktop results:
 <div align="left">
   <img src="src/assets/readme-images/lighthouse-desktop.png" alt="Desktop lighthouse results" width="350">
@@ -352,6 +354,20 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - I also needed to migrate social and social accounts to the correct database.
 - Models not showing up in Django admin
   - I found the answer [here](https://stackoverflow.com/questions/2984987/model-not-showing-up-in-django-admin) and registered the models.
+- Locations dropdown only showing the first 10 locations
+  - This was caused by the API page size of 10 ,set in settings.py
+  - I increased the page size to 50 as a temporary fix to show all locations
+  - Unfortunately this causes longer loading times in the rest of the site, and does not make the best use of infinite scroll
+  - Therefore in the future I will remove pagination from the locations dropdown, and reset the API page size to 10
+- Logo icon
+  - There is a console error message about logo192.png, a file in manifest.json
+  - This logo is part of the orginal React app placeholder
+  - I tried deleting the manifest.json, but that caused more errors
+  - It is not causing problems. so for now I have left it as it is
+<div align="center">
+  <img src="src/assets/readme-images/logo-error.png" alt="Logo error" width="400">
+</div>
+
 - Search bar for Plans not working
   - The spinner was visible but no results appeared
   - There was a server (500) error
@@ -362,18 +378,18 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - Tutoring also suggested that I add currentUser to PlansPage.js as it is in PostsPage.js, and I did this and left it in the code although I think it might not be necessary.
 
 ## Future Implementations
-- Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information.
-- Feedback messages: Users will get a feedback popup when engaging with features on the site.
-- Contact form: The user will be able to fill out and submit a contact form.
-- Surface: Update styling, branding, and visual appeal.
-- Popular locations: The user will be able to see the most popular locations for posts, so that they know where other users are traveling and posting.
+- Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information
+- Feedback messages: Users will get a feedback popup when engaging with features on the site
+- Contact form: The user will be able to fill out and submit a contact form
+- Surface: Update styling, branding, and visual appeal
+- Popular locations: The user will be able to see the most popular locations for posts, so that they know where other users are traveling and posting
 - Locations page: Users can view all post locations so that they can get inspiration about locations
-- Plan dates: Users will be able to add travel dates to their plans.
-- Messaging: Users will be able to direct-message each other as well as communicating through comments.
-- Custom locations: Users will be able to add custom locations instead of choosing from the dropdown.
-- View plans and posts by location: Users will be able to use filters to see all content about a given location.
-- Locations map: Users will be able to see all the locations on a map.
-- Improved search: Search function will include more of the fields in posts and plans, for instance content as well as title, location, etc.
+- Plan dates: Users will be able to add travel dates to their plans
+- Messaging: Users will be able to direct-message each other as well as communicating through comments
+- Custom locations: Users will be able to add custom locations instead of choosing from the dropdown
+- View plans and posts by location: Users will be able to use filters to see all content about a given location
+- Locations map: Users will be able to see all the locations on a map
+- Improved search: Search function will include more of the fields in posts and plans, for instance content as well as title, location, etc
 
 ## Languages, Libraries, and Software
 ### Languages
