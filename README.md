@@ -308,14 +308,14 @@ A check with the [W3C Markup Validator](https://validator.w3.org/) showed traili
 #### CSS
 A check with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) showed no errors.
 
-<!-- #### Javascript
-
-
-#### Python
-Python code was formatted with black. -->
+#### Javascript
+I installed eslint and have these warnings that do not seem to be causing a problem:
+<div align="left">
+  <img src="src/assets/readme-images/eslint-warnings.png" alt="Eslint warnings" width="350">
+</div>
 
 ### User Stories Testing
-All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in a future sprint.
+All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in future sprints.
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
