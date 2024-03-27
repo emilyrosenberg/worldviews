@@ -308,11 +308,11 @@ A check with the [W3C Markup Validator](https://validator.w3.org/) showed traili
 #### CSS
 A check with the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) showed no errors.
 
-#### Javascript
+<!-- #### Javascript
 
 
 #### Python
-Python code was formatted with black.
+Python code was formatted with black. -->
 
 ### User Stories Testing
 All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in a future sprint.
@@ -381,6 +381,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - CSS
 - Javascript
 - Python
+
 ### Modules and Packages
 - axios
 - black (python formatter)
@@ -413,13 +414,12 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 - Matcherator
 - Color Picker
 - Unsplash
-<!-- - PEP8 -->
 - W3C - HTML
 - W3C - CSS
 
 ## Creating the App
 ### Creating the Repo and Local Workspace
-This app was created with Gitpod and developed in VS Code.
+This app was created with Gitpod and developed in VS Code and switched to Gitpod to access tutoring.
 1. Go to the Code Institute React CI Template [Template](https://github.com/Code-Institute-Org/react-ci-template)
 2. Click on Use This Template
 3. Create a new repository with the template, and copy the url
@@ -431,51 +431,27 @@ Open VS Code and click Clone Git Repository and enter the url
 8. Run `npm audit fix --force` to fix errors
 9. Run `npm start` to run the app locally
 
-<!-- 
-6. Install Django and gunicorn: `pip3 install django gunicorn`
-7. Install supporting database libraries dj_database_url and psycopg2 library: `pip3 install dj_database_url psycopg2`
-8. Create file for requirements: in the terminal window type `pip freeze --local > requirements.txt`
-9. Create project: in the terminal window type `django-admin startproject <your_project_name>`
-10. Create app: in the terminal window type `python3 manage.py startapp <your_app_name>`
-11. Add app to the list of installed apps in settings.py file: your_app_name
-12. Migrate changes: in the terminal window type python3 manage.py migrate
-13. Run the server to test if the app is installed, in the terminal window type `python3 manage.py runserver`
-14. If the app has been installed correctly the window will display The install worked successfully! Congratulations!<br>
-Additional instructions:
-15. Create an account in ElephantSQL as a PostgreSQL database and connect in Heroku config vars and env.py
-16. Create an account in Cloudinary for image storage and connect in Heroku config vars and settings.py -->
-
-<!-- _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these app creation instructions._ -->
+_Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these app creation instructions._
 
 ## Deployment
 The web app was deployed with Heroku. It is live at this [link](https://worldviews-162453e10c7f.herokuapp.com/). <br>
 
 ### Heroku deployment
-This site was deployed by completing the following steps:
+The Wroldviews frontend was deployed by completing the following steps:
 
 1. Log in to [Heroku](https://id.heroku.com) or create an account
 2. On the main page click the button labeled New in the top right corner and from the drop-down menu select Create New App
 3. You must enter a unique app name
 4. Select your region
 5. Click on the Create App button
-6. Click Resources and select Heroku Postgres database
-7. Open the Settings tab and scroll down to Config Vars
-<!-- 8. Click Reveal Config Vars and add a new record with `SECRET_KEY = <key>`
-9. Add a new record `CLOUDINARY_URL = <url>`
-10. Add a new record `DISABLE_COLLECTSTATIC = 1`
-11. Next, scroll down to the Buildpack section click Add Buildpack. Select Python and click Save Changes
-12. Open the Deploy tab
-13. Select Github as the deployment method
-14. Confirm you want to connect to GitHub
-15. Search for the repository name and click the connect button
-16. Scroll to the bottom of the deploy page and select the preferred deployment type. Enable Automatic Deploys for automatic deployment when you push updates to Github
-17. Create a Procfile `web: gunicorn <your_project_name>.wsgi`
-For final deployment:
-_NOTE: I could not deploy this way, unfortunately. A CI tutor told me that in order to deploy, I must have DEBUG = True in settings.py and DEBUG = FALSE in Heroku. A fellow student thought it might be a problem with the static files. I ran `python3 manage.py collectstatic` but this did not help either. Another CI tutor did troubleshooting with me and found a database error because Django is finding an earlier version of the database. I cannot recreate the error locally. When I try to run locally, I get Server Error (500). In settings.py DEBUG = False, and the app is running on Heroku. For now, this is the best I could do before submission. Actually finally it was no longer deploying from Heroku and so that the assessors can at least see my project, I set everything back to the way it was before. DEBUG = True in settings.py and DEBUG = FALSE in config vars._
-18. When development is complete change the debug setting to: `DEBUG = False` in settings.py
-19. In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, and `DEBUG = FALSE`
+6. Open the Deploy tab
+7. Select Github as the deployment method
+8. Confirm you want to connect to GitHub
+9. Search for the repository name and click the Connect button
+10. Scroll to the bottom of the deploy page and select the preferred deployment type (Enable Automatic Deploys for automatic deployment every time you push updates to Github)
+11. Wait for the app to build and deploy
 
-_Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these deployment instructions._ -->
+_Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md?plain=1) for the basis for these deployment instructions._
 
 ## Credits
 ### Content
