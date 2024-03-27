@@ -48,7 +48,7 @@ function PlanCreateForm() {
       const { data } = await axiosReq.post("/plans/", formData);
       history.push(`/plans/${data.id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }

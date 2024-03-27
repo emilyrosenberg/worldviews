@@ -34,7 +34,7 @@ function PlanCommentEditForm(props) {
       }));
       setShowPlanEditForm(false);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
     }
   };
 

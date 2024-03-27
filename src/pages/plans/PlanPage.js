@@ -36,7 +36,7 @@ function PlanPage() {
         setPlan({ results: [plan] });
         setPlanComments(plan_comments);
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 

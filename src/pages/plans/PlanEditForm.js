@@ -37,7 +37,7 @@ function PlanEditForm() {
 
         is_owner ? setPlanData({ title, content, location }) : history.push("/");
       } catch (err) {
-        console.log(err);
+        // console.log(err);
       }
     };
 
@@ -63,7 +63,7 @@ function PlanEditForm() {
       await axiosReq.put(`/plans/${id}`, formData);
       history.push(`/plans/${id}`);
     } catch (err) {
-      console.log(err);
+      // console.log(err);
       if (err.response?.status !== 401) {
         setErrors(err.response?.data);
       }
