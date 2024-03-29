@@ -377,6 +377,17 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - It turned out to be a problem in the backend: in plans/views.py search_fields, `location` needed to be changed to `location__name` in order to find the results in the locations model.
   - This fixed the problem.
   - Tutoring also suggested that I add currentUser to PlansPage.js as it is in PostsPage.js, and I did this and left it in the code although I think it might not be necessary.
+- Page not loading
+  - The error was `TypeError: Cannot read properties of undefined (reading 'length')
+    at PopularProfiles.js:17:32`
+  - It could be a problem with how the page is rendering
+  - All of the code is the same as in the walkthrough and I have not changed anything recently, but other students have had this issue before.
+  - Tutoring helped me troubleshoot but couldn't help, and all the solutions caused more errors.
+  - The solution was to add ? to make it return false instead of trying to keep loading
+  <div align="center">
+    <img src="src/assets/readme-images/loading-error.png" alt="Loading error" width="400">
+  </div>
+  - Thanks to [Mr_Bim_Alumni](https://code-institute-room.slack.com/archives/C5B6PAHDL/p1667047721462989?thread_ts=1667044797.306759&cid=C5B6PAHDL)
 
 ## Future Implementations
 - Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information
