@@ -429,9 +429,11 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   - All of the code is the same as in the walkthrough and I have not changed anything recently, but other students have had this issue before.
   - Tutoring helped me troubleshoot but couldn't help, and all the solutions caused more errors.
   - The solution was to add ? to make it return false instead of trying to keep loading
+  
   <div align="center">
     <img src="src/assets/readme-images/loading-error.png" alt="Loading error" width="400">
   </div>
+
   - Thanks to [Mr_Bim_Alumni](https://code-institute-room.slack.com/archives/C5B6PAHDL/p1667047721462989?thread_ts=1667044797.306759&cid=C5B6PAHDL)
 
 ## Future Implementations
@@ -457,7 +459,6 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 
 ### Modules and Packages
 - axios
-- black (python formatter)
 - bootstrap
 - jwt-decode
 - react
