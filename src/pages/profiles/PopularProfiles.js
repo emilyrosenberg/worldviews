@@ -7,6 +7,7 @@ import Profile from "./Profile";
 
 const PopularProfiles = ({ mobile }) => {
   const { popularProfiles } = useProfileData();
+  console.log(popularProfiles);
 
   return (
     <Container
@@ -14,7 +15,7 @@ const PopularProfiles = ({ mobile }) => {
         mobile && "d-lg-none text-center mb-3 mt-5"
       }`}
     >
-      {popularProfiles.results.length ? (
+      {popularProfiles?.results?.length ? (
         <>
           <div className="m-3">
             <h5>Worldviews trailblazers</h5>
