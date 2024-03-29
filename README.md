@@ -286,7 +286,52 @@ Posts and plans will become more useful with future expansion of the locations m
 </div>
 
 #### Screenshots
-<!-- The website looks like this -->
+A selection of screenshots on desktop and mobile. <br>
+
+When a user first visits the page, it appears like this:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot1.png" alt="Landing page" width="500">
+</div>
+
+This is the Sign up page:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot2.png" alt="Landing page" width="500">
+</div>
+
+This is the landing page for a logged-in user:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot3.png" alt="Logged in landing page" width="500">
+</div>
+
+This is the profile page for a logged-in user:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot4.png" alt="Profile page" width="500">
+</div>
+
+On mobile, the landing page looks like this:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot-mobile2.png" alt="Mobile landing page" width="200">
+</div>
+
+Plans look like this on mobile:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot-mobile3.png" alt="Mobile plans page" width="200">
+</div>
+
+This is a logged-in user's profile page on mobile:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot-mobile5.png" alt="Mobile profile page" width="200">
+</div>
+
+The form to create a post looks like this on mobile:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot-mobile4.png" alt="Post create form" width="200">
+</div>
+
+This is the About page on mobile:
+<div align="left">
+  <img src="src/assets/readme-images/screenshot-mobile1.png" alt="Mobile about page" width="200">
+</div>
 
 ## Testing
 #### Lighthouse
