@@ -7,8 +7,6 @@
 }
 
 .App {
-    /* font-family: "Libre Bodoni", serif; */
-    /* font-family: "Lato", sans-serif; */
     font-family: var(--main-font);
     background-color: #f8f8f8;
     min-height: 100vh;

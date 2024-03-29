@@ -14,7 +14,8 @@ This website is responsive on all devices, and designed to be appealing and intu
 - View all the posts and plans of others
 - Like and comment on posts and plans
 
-All user-generated content has full CRUD functionality. The live site can be visited [here](https://worldviews-162453e10c7f.herokuapp.com/).
+All user-generated content has full CRUD functionality. The live site can be visited [here](https://worldviews-162453e10c7f.herokuapp.com/). <br>
+The backend repository is available to view [here](https://github.com/emilyrosenberg/worldviews-api).
 <hr>
 
 ## Table of Contents
@@ -155,12 +156,12 @@ The header includes the Worldviews logo, navigation items, and Sign in/Sign out 
 - The navbar always contains Home and About. If the user is logged out or has no account, they can see options to Sign Up and Sign In. If the user is logged in, they can see the Plans, Feed, Liked, and Sign out options, and their profile avatar.
 
 #### Search bar
-- The search bar has an input field and a button. User can search by keyword and results will be returned if the keyword matches any posts's title, content, or author.
+- The search bar has an input field and a button. Users can search by keyword and results will be returned if the keyword matches any posts's title, content, or author.
 
 ### Features
 
 #### Reusable components
-This web app incorporates reuseable React components to streamline complexity so that each component's code is written only once, and to improve UX by creating a predictable experience across the web app. For instance, every time a user wants to edit or delete their own user-generated content of any kind, the process is the same.
+This web app incorporates reusable React components to streamline complexity so that each component's code is written only once, and to improve UX by creating a predictable experience across the web app. For instance, every time a user wants to edit or delete their own user-generated content of any kind, the process is the same.
 - Navbar: The navbar appears on every page.
 - Avatar: This is the user's profile image, and is used as a link to their profile everywhere on the web app.
 - Asset: This is an animated spinner that shows whenever a component is loading.
@@ -453,7 +454,7 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 The web app was deployed with Heroku. It is live at this [link](https://worldviews-162453e10c7f.herokuapp.com/). <br>
 
 ### Heroku deployment
-The Wroldviews frontend was deployed by completing the following steps:
+The Worldviews frontend was deployed by completing the following steps:
 
 1. Log in to [Heroku](https://id.heroku.com) or create an account
 2. On the main page click the button labeled New in the top right corner and from the drop-down menu select Create New App
@@ -483,6 +484,6 @@ _Thanks to [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blo
 - Inspiration for this readme came from [gStarhigh](https://github.com/gStarhigh/pro4).
 - An outline of the deployment instructions came from [Pedro Cristo](https://github.com/PedroCristo/portfolio_project_4/blob/main/README.md#frameworks---libraries---programs-used).
 - Thank you to the Code Institute tutors for their enthusiastic support with problem solving and squashing bugs.
-- Thank you to my Code Institute mentor, Martina Terlevic.
-- Thanks to my Code Institute cohort facilitator Kristyna, who is the best at pep talks.
+- Thank you to my Code Institute mentor Martina Terlevic for boosting my confidence and guiding me through the complicated details to reach the clear goals.
+- Thanks to my Code Institute cohort facilitator Kristyna, who is the very best at pep talks.
 - And last but not least, thank you to my amazing student pals who have banded together to provide positivity and solutions in the tough times, and celebrations in the good ones.
