@@ -28,6 +28,9 @@ The backend repository is available to view [here](https://github.com/emilyrosen
   - [Features](#features)
   - [Surface](#surface)
 - [Testing](#testing)
+  - [Code Validation](#code-validation)
+  - [User stories testing](#user-stories-testing)
+  - [Manual testing](#manual-testing)
   - [Bugs](#bugs)
 - [Future Implementations](#future-implementations)
 - [Languages, Libraries, and Software](#languages-libraries-and-software)
@@ -365,48 +368,36 @@ I installed eslint and have these warnings that do not seem to be causing a prob
 ### User Stories Testing
 All [user stories](#user-stories) have been tracked, implemented, and tested for full functionality. Any additional user stories or development improvements have been added to [future implementations](#future-implementations) to be completed in future sprints.
 
-#### Navigation & Authentication
 | User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| :- | :-: | :- |
+| Navigation & Authentication |  |  |
 | **Navigation**: As a user I can view a navbar from every page so that I can navigate easily between pages | ✅ | The navbar is visible on all pages |
-| **Routing**: As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh | ✅ |  |
+| **Routing**: As a user I can navigate through pages quickly so that I can view content seamlessly without page refresh | ✅ | Pages are easily reachable using the navbar or other clickable links throughout the app |
 | **Authentication - Sign up**: As a user I can create a new account so that I can access all the features for signed up users| ✅ | The sign up option in the navbar brings users to a registration form |
 | **Authentication - Sign in**: As a user I can sign in to the app so that I can access functionality for logged in users | ✅ | The sign in option in the navbar brings users to a sign in form |
 | **Authentication - Logged in status**: As a user I can tell if I am logged in or not so that I can log in if I need to | ✅ | When a user is logged out, they see the option to log in. When a user is logged in, their avatar appears in the navbar and they have the option to sign out. |
-| **Authentication - Refreshing access tokens**: As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised | ✅ |  |
-| **Navigation: Conditional rendering**: As a logged out user I can see sign in and sign up options so that I can sign in/sign up | ✅ |  |
+| **Authentication - Refreshing access tokens**: As a user I can maintain my logged-in status until I choose to log out so that my user experience is not compromised | ✅ | A logged in user stays logged in |
+| **Navigation: Conditional rendering**: As a logged out user I can see sign in and sign up options so that I can sign in/sign up | ✅ | Sign in and sign up options are visible in the navbar |
 | **Avatar**: As a user I can view users' avatars so that I can easily identify users of the application | ✅ | User avatars appear in Trailblazers and on posts, plans, comments, etc. |
-
-#### Adding & Liking Posts
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| Adding & Liking Posts |  |  |
 | **Create posts**: As a logged in user I can create posts so that I can share my images with the world! | ✅ | The Add post option brings the user to a create post form |
 | **View a post**: As a user I can view the details of a single post so that I can learn more about it | ✅ | A user can click on a post to view it |
 | **Like a post**: As a logged in user I can like a post so that I can show my support for the posts that interest me | ✅ | A user can like a post by clicking on the heart icon |
-
-#### The Posts Page
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| The Posts Page |  |  |
 | **View most recent posts**: As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content | ✅ | The posts page contains all posts, ordered by date wiht he most recent posts first |
 | **Keyword search**: As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in | ✅ | The keyword search returns posts containing the entered keyword |
 | **View liked posts**: As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most | ✅ | A user can click on Liked in the navbar to view all the posts they have liked |
 | **View posts of followed users**: As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about | ✅ | A user can click on Feed in the navbar to view posts by all the users they have followed |
 | **Infinite scroll**: As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc | ✅ | _Note: Page length is set to 50 as a bug fix for Locations, and infinite scroll will become more useful when this is reset to 10_ |
-
-#### The Post Page
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| The Post Page |  |  |
 | **Post page**: As a user I can view the posts page so that I can read the comments about the post | ✅ |  |
-| **Edit post**: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created | ✅ |  |
-| **Create a comment**: As a logged in user I can add comments to a post so that I can share my thoughts about the post | ✅ |  |
-| **Comment date**: As a user I can see how long ago a comment was made so that I know how old a comment is | ✅ |  |
-| **View comments**: As a user I can read comments on posts so that I can read what other users think about the posts | ✅ |  |
-| **Delete comments**: As an owner of a comment I can delete my comment so that I can control removal of my comment from the application | ✅ |  |
-| **Edit a comment**: As an owner of a comment I can edit my comment so that I can fix or update my existing comment | ✅ |  |
-
-#### The Profile Page
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| **Edit post**: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created | ✅ | A user can edit their post by clicking the More Dropdown dots, which brings them to the post edit form |
+| **Create a comment**: As a logged in user I can add comments to a post so that I can share my thoughts about the post | ✅ | A user can add comments below the post using the comment input box |
+| **Comment date**: As a user I can see how long ago a comment was made so that I know how old a comment is | ✅ | Comments have time stamps |
+| **View comments**: As a user I can read comments on posts so that I can read what other users think about the posts | ✅ | Comments are visible below posts |
+| **Delete comments**: As an owner of a comment I can delete my comment so that I can control removal of my comment from the application | ✅ | A user can delete their comment by clicking the More Dropdown dots which will give them an option to delete |
+| **Edit a comment**: As an owner of a comment I can edit my comment so that I can fix or update my existing comment | ✅ | A user can edit their comment by clicking the More Dropdown dots which will give them an option to edit |
+| The Profile Page |  |  |
 | **Profile page**: As a user I can view other users profiles so that I can see their posts and learn more about them | ✅ |  |
 | **Most followed profiles**: As a user I can see a list of the most followed profiles so that I can see which profiles are popular | ✅ |  |
 | **User profile - User stats**: As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them | ✅ |  |
@@ -414,19 +405,12 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **View all posts by a specific user**: As a user I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them | ✅ |  |
 | **Edit profile**: As a logged in user I can edit my profile so that I can change my profile picture and bio | ✅ |  |
 | **Update username and password**: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure | ✅ |  |
-
-#### Locations model
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| Locations model |  |  |
 | **Locations search**: As a user I can search post locations so that I can see posts about a specific location | ✅ |  |
 | **Future implementation - Custom locations**: Users will be able to add custom locations instead of choosing from the dropdown | 🚧 | Please see [future implementations](#future-implementations) for more features! |
 | **Future implementation - View plans and posts by location**: Users will be able to use filters to see all content about a given location | 🚧 |  |
 | **Future implementation - Locations map**: Users will be able to see all the locations on a map | 🚧 |  |
-
-
-#### Plans model
-| User Story | Pass | Details |
-| :------------------------------ | :-: | :-------------------- |
+| Plans model |  |  |
 | **Create plan**: As a logged-in user I can create a plan so that I can ask other users for info about a location | ✅ |  |
 | **Manage plan**: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request | ✅ |  |
 | **View plans**: As a user I can view plans that other users have made so that I can see if there are any interesting ones | ✅ |  |
