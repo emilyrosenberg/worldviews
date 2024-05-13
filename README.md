@@ -467,7 +467,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | Home page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
 | **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
-|| **Trailblazers** | Users' avatars and usernames are visible, with the most-followed users first | ✅ |  |
+| **Trailblazers** | Users' avatars and usernames are visible, with the most-followed users first | ✅ |  |
 | **Trailblazers - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
 | **Trailblazers - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
 | **Posts** | Posts are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
@@ -502,13 +502,15 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | About |  |  |  |
 | **About info** | Text is visible | ✅ |  |
 | User's Profile |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Profile page** | Avatar, username, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
+| **Profile page (no posts)** | "No results" message is visible | ✅ |  |
+| **Edit profile** | Clicking the three dots menu gives the user an option to edit, change username, or change password | ✅ |  |
+| **Edit profile - details** |  | ✅ |  |
+| **Upload image** |  | ✅ |  |
+| **Cancel button** |  | ✅ |  |
+| **Save button** |  | ✅ |  |
+| **Change username** |  | ✅ |  |
+| **Change password** |  | ✅ |  |
 | Other profiles |  |  |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
