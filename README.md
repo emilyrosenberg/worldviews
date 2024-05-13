@@ -380,7 +380,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **Navigation: Conditional rendering**: As a logged out user I can see sign in and sign up options so that I can sign in/sign up | ✅ | Sign in and sign up options are visible in the navbar |
 | **Avatar**: As a user I can view users' avatars so that I can easily identify users of the application | ✅ | User avatars appear in Trailblazers and on posts, plans, comments, etc. |
 | Adding & Liking Posts |  |  |
-| **Create posts**: As a logged in user I can create posts so that I can share my images with the world! | ✅ | The Add post option brings the user to a create post form |
+| **Create posts**: As a logged in user I can create posts so that I can share my images with the world! | ✅ | The New post option brings the user to a create post form |
 | **View a post**: As a user I can view the details of a single post so that I can learn more about it | ✅ | A user can click on a post to view it |
 | **Like a post**: As a logged in user I can like a post so that I can show my support for the posts that interest me | ✅ | A user can like a post by clicking on the heart icon |
 | The Posts Page |  |  |
@@ -406,26 +406,136 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **Edit profile**: As a logged in user I can edit my profile so that I can change my profile picture and bio | ✅ | A user can navigate to their profile page and click the More Dropdown dots to edit their profile |
 | **Update username and password**: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure | ✅ | This feature is available as part of the authorization package |
 | Locations model |  |  |
-| **Locations search**: As a user I can search post locations so that I can see posts about a specific location | ✅ |  |
+| **Locations search**: As a user I can search post locations so that I can see posts about a specific location | ✅ | A user can search post location in the search bar on the Plans page |
 | **Future implementation - Custom locations**: Users will be able to add custom locations instead of choosing from the dropdown | 🚧 | Please see [future implementations](#future-implementations) for more features! |
 | **Future implementation - View plans and posts by location**: Users will be able to use filters to see all content about a given location | 🚧 |  |
 | **Future implementation - Locations map**: Users will be able to see all the locations on a map | 🚧 |  |
 | Plans model |  |  |
-| **Create plan**: As a logged-in user I can create a plan so that I can ask other users for info about a location | ✅ |  |
-| **Manage plan**: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request | ✅ |  |
-| **View plans**: As a user I can view plans that other users have made so that I can see if there are any interesting ones | ✅ |  |
-| **Search**: As a user I can search plans so that I can find past recommendations | ✅ |  |
-| **Create plans comments**: As a logged-in user I can comment on a plan so that I can share info with other users | ✅ |  |
-| **Manage plan comments**: As a logged-in user I can edit or delete my own comments so that I can control my contributions | ✅ |  |
-<!-- | ****: | ✅ |  |
-| ****: | ✅ |  |
-| ****: | ✅ |  |
-| ****: | ✅ |  |
-| ****: | ✅ |  |
-| ****: | ✅ |  | -->
+| **Create plan**: As a logged-in user I can create a plan so that I can ask other users for info about a location | ✅ | The New plan option brings the user to a create plan form  |
+| **Manage plan**: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request | ✅ | A user can edit their plan by clicking the More Dropdown dots, which gives an option to delete or brings them to the plan edit form |
+| **View plans**: As a user I can view plans that other users have made so that I can see if there are any interesting ones | ✅ | All plans are visible on the Plans page |
+| **Search**: As a user I can search plans so that I can find past recommendations | ✅ | A search bar at the top of the page allows users to search |
+| **Create plans comments**: As a logged-in user I can comment on a plan so that I can share info with other users | ✅ | A user can add comments below the plan using the comment input box |
+| **Manage plan comments**: As a logged-in user I can edit or delete my own comments so that I can control my contributions | ✅ | A user can edit or delete their comment by clicking the More Dropdown dots which will give them an option to edit or delete |
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
+
+| Action | Expectation | Pass | Details |
+| :- | :- | :-: | :- |
+| Navbar |  |  |  |
+| **Logo link** | Direct to home page | ✅ |  |
+| **Home link** | Direct to home page | ✅ |  |
+| **New post link (not logged in)** | Redirect to sign in page | ✅ |  |
+| **New plan link (not logged in)** | Redirect to sign in page | ✅ |  |
+| **New post link (logged in)** | Direct to post create form | ✅ |  |
+| **New plan link (logged in)** | Direct to plan create form | ✅ |  |
+| **Plans link (for logged-in users)** | Direct to plans page | ✅ |  |
+| **Feed link (for logged-in users)** | Direct to page with posts from followed users | ✅ |  |
+| **Liked link (for logged-in users)** | Direct to page with liked posts | ✅ |  |
+| **About link** | Direct to About page | ✅ |  |
+| **Sign in link** | Direct to sign in form | ✅ |  |
+| **Sign up link** | Direct to sign up form | ✅ |  |
+| **Sign out link** | Log out user | ✅ | In the future this will have a confirmation page and success message |
+| **Profile link** | Direct to user's profile | ✅ |  |
+| Sign up page |  |  |  |
+| **Text fields** | User is able to type a username, password, and password confirmation | ✅ |  |
+| **Sign up button (incorrect entry)** | Show appropriate error message(s) so that user can successfully create an account (_"This field may not be blank"_ etc) | ✅ |  |
+| **Sign up button** | Sign in user and redirect to home page | ✅ | In the future there will be a success message |
+| **Sign in link** | Direct to sign in form | ✅ |  |
+| Sign in page |  |  |  |
+| **Text fields** | User is able to type their username and password | ✅ |  |
+| **Sign in button (incorrect entry)** | Show appropriate error message(s) so that user can successfully sign in (_"Unable to log in with provided credentials"_ etc) | ✅ |  |
+| **Sign in button** | Sign in user and redirect to home page | ✅ | In the future there will be a success message |
+| **Sign up link** | Direct to sign up form | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Sign out page |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| New plan |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| New post |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Home page |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Plans page |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Feed (Posts page) |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Liked |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| About |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| User's Profile |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| Other profiles |  |  |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+| **** |  | ✅ |  |
+
 
 ### Bugs
 - Unable to deploy backend or update Config Vars 
