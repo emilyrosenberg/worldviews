@@ -388,7 +388,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **Keyword search**: As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in | ✅ | The keyword search returns posts containing the entered keyword |
 | **View liked posts**: As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most | ✅ | A user can click on Liked in the navbar to view all the posts they have liked |
 | **View posts of followed users**: As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about | ✅ | A user can click on Feed in the navbar to view posts by all the users they have followed |
-| **Infinite scroll**: As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc | ✅ | _Note: Page length is set to 50 as a bug fix for Locations, and infinite scroll will become more useful when this is reset to 10_ |
+| **Infinite scroll**: As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc | ✅ | _Note: Page size is set to 50 as a bug fix for Locations, and infinite scroll will become more useful when this is reset to 10_ |
 | The Post Page |  |  |
 | **Post page**: As a user I can view the post page so that I can read the comments about the post | ✅ | A user can click on the post to open it and see the comments |
 | **Edit post**: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created | ✅ | A user can edit their post by clicking the More Dropdown dots, which brings them to the post edit form |
@@ -448,21 +448,6 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Sign in button (incorrect entry)** | Show appropriate error message(s) so that user can successfully sign in (_"Unable to log in with provided credentials"_ etc) | ✅ |  |
 | **Sign in button** | Sign in user and redirect to home page | ✅ | In the future there will be a success message |
 | **Sign up link** | Direct to sign up form | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| Sign out page |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
 | New plan |  |  |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
@@ -480,21 +465,23 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
 | Home page |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
+| **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
+| **Trailblazers** | Users' avatars and usernames show, with the most-followed users first | ✅ |  |
+| **Trailblazers - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
+| **Trailblazers - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
+| **Posts** | Posts are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
 | **** |  | ✅ |  |
 | Plans page |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
+| **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
+| **Plans** | Plans are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
+| **Plan** | User can click on a plan to open the plan detail | ✅ |  |
+| **Plan detail** | User sees the plan with the avatar and username of the user who posted, the date it was posted, comment count, any comments, and a comment input form | ✅ |  |
+| **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
+| **Comments** | User sees comments below the plan, most recent first | ✅ |  |
+| **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
+| **Edit/delete comment** | Clicking the More Dropdown dots gives the user an option to edit or delete their comment | ✅ |  |
 | Feed (Posts page) |  |  |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
@@ -503,6 +490,12 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
+| **Post** | User can click on a post to open the post detail | ✅ |  |
+| **Post detail** | User sees the plan with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
+| **Comments** | User sees comments below the post, most recent first | ✅ |  |
+| **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
+| **Edit/delete comment** | Clicking the More Dropdown dots gives the user an option to edit or delete their comment | ✅ |  |
 | Liked |  |  |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
