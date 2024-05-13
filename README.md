@@ -391,20 +391,20 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **Infinite scroll**: As a user I can keep scrolling through the images on the site, that are loaded for me automatically so that I don't have to click on "next page" etc | ✅ | _Note: Page size is set to 50 as a bug fix for Locations, and infinite scroll will become more useful when this is reset to 10_ |
 | The Post Page |  |  |
 | **Post page**: As a user I can view the post page so that I can read the comments about the post | ✅ | A user can click on the post to open it and see the comments |
-| **Edit post**: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created | ✅ | A user can edit their post by clicking the More Dropdown dots, which brings them to the post edit form |
+| **Edit post**: As a post owner I can edit my post title and description so that I can make corrections or update my post after it was created | ✅ | A user can edit their post by clicking the three dots menu, which brings them to the post edit form |
 | **Create a comment**: As a logged in user I can add comments to a post so that I can share my thoughts about the post | ✅ | A user can add comments below the post using the comment input box |
 | **Comment date**: As a user I can see how long ago a comment was made so that I know how old a comment is | ✅ | Comments have time stamps |
 | **View comments**: As a user I can read comments on posts so that I can read what other users think about the posts | ✅ | Comments are visible below posts |
-| **Delete comments**: As an owner of a comment I can delete my comment so that I can control removal of my comment from the application | ✅ | A user can delete their comment by clicking the More Dropdown dots which will give them an option to delete |
-| **Edit a comment**: As an owner of a comment I can edit my comment so that I can fix or update my existing comment | ✅ | A user can edit their comment by clicking the More Dropdown dots which will give them an option to edit |
+| **Delete comments**: As an owner of a comment I can delete my comment so that I can control removal of my comment from the application | ✅ | A user can delete their comment by clicking the three dots menu which will give them an option to delete |
+| **Edit a comment**: As an owner of a comment I can edit my comment so that I can fix or update my existing comment | ✅ | A user can edit their comment by clicking the three dots menu which will give them an option to edit |
 | The Profile Page |  |  |
 | **Profile page**: As a user I can view other users' profiles so that I can see their posts and learn more about them | ✅ | A user can click on the other users' avatars to see their profile pages |
 | **Most followed profiles**: As a user I can see a list of the most followed profiles so that I can see which profiles are popular | ✅ | The most-followed users appear as Worldviews trailblazers |
 | **User profile - User stats**: As a user I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them | ✅ | These statistics are visible on each user's profile page |
 | **Follow/Unfollow a user**: As a logged in user I can follow and unfollow other users so that I can see and remove posts by specific users in my posts feed | ✅ | A user can click the Follow and Unfollow buttons to follor or unfollow another user |
 | **View all posts by a specific user**: As a user I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them | ✅ | All posts by a specific user appear on their profile page |
-| **Edit profile**: As a logged in user I can edit my profile so that I can change my profile picture and bio | ✅ | A user can navigate to their profile page and click the More Dropdown dots to edit their profile |
-| **Update username and password**: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure | ✅ | This feature is available as part of the authorization package |
+| **Edit profile**: As a logged in user I can edit my profile so that I can change my profile picture and bio | ✅ | A user can navigate to their profile page and click the three dots menu to edit their profile |
+| **Update username and password**: As a logged in user I can update my username and password so that I can change my display name and keep my profile secure | ✅ | A user can update their username and password from the three dots menu on their Profile page |
 | Locations model |  |  |
 | **Locations search**: As a user I can search post locations so that I can see posts about a specific location | ✅ | A user can search post location in the search bar on the Plans page |
 | **Future implementation - Custom locations**: Users will be able to add custom locations instead of choosing from the dropdown | 🚧 | Please see [future implementations](#future-implementations) for more features! |
@@ -412,11 +412,11 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **Future implementation - Locations map**: Users will be able to see all the locations on a map | 🚧 |  |
 | Plans model |  |  |
 | **Create plan**: As a logged-in user I can create a plan so that I can ask other users for info about a location | ✅ | The New plan option brings the user to a create plan form  |
-| **Manage plan**: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request | ✅ | A user can edit their plan by clicking the More Dropdown dots, which gives an option to delete or brings them to the plan edit form |
+| **Manage plan**: As a logged-in user I can edit or delete my own plans so that I can make corrections or update my request | ✅ | A user can edit their plan by clicking the three dots menu, which gives an option to delete or brings them to the plan edit form |
 | **View plans**: As a user I can view plans that other users have made so that I can see if there are any interesting ones | ✅ | All plans are visible on the Plans page |
 | **Search**: As a user I can search plans so that I can find past recommendations | ✅ | A search bar at the top of the page allows users to search |
 | **Create plans comments**: As a logged-in user I can comment on a plan so that I can share info with other users | ✅ | A user can add comments below the plan using the comment input box |
-| **Manage plan comments**: As a logged-in user I can edit or delete my own comments so that I can control my contributions | ✅ | A user can edit or delete their comment by clicking the More Dropdown dots which will give them an option to edit or delete |
+| **Manage plan comments**: As a logged-in user I can edit or delete my own comments so that I can control my contributions | ✅ | A user can edit or delete their comment by clicking the three dots menu which will give them an option to edit or delete |
 
 ### Manual Testing
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
@@ -467,11 +467,10 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | Home page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
 | **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
-| **Trailblazers** | Users' avatars and usernames show, with the most-followed users first | ✅ |  |
+|| **Trailblazers** | Users' avatars and usernames are visible, with the most-followed users first | ✅ |  |
 | **Trailblazers - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
 | **Trailblazers - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
 | **Posts** | Posts are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
-| **** |  | ✅ |  |
 | Plans page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
 | **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
@@ -481,37 +480,27 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
 | **Comments** | User sees comments below the plan, most recent first | ✅ |  |
 | **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
-| **Edit/delete comment** | Clicking the More Dropdown dots gives the user an option to edit or delete their comment | ✅ |  |
+| **Edit/delete comment** | Clicking the three dots menu gives the user an option to edit or delete their comment | ✅ |  |
 | Feed (Posts page) |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Posts** | Posts from followed users are visible, most recent first, with comment and like count | ✅ |  |
+| **Unfollow** | When the user unfollows another user, posts from that user no longer appears on this page after refresh | ✅ |  |
 | **Post** | User can click on a post to open the post detail | ✅ |  |
-| **Post detail** | User sees the plan with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
 | **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
 | **Comments** | User sees comments below the post, most recent first | ✅ |  |
 | **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
-| **Edit/delete comment** | Clicking the More Dropdown dots gives the user an option to edit or delete their comment | ✅ |  |
+| **Edit/delete comment** | Clicking the three dots menu gives the user an option to edit or delete their comment | ✅ |  |
 | Liked |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Posts** | Posts liked by the user are visible, most recent first, with comment and like count | ✅ |  |
+| **Unlike** | When the user clicks the heart again, the post no longer appears on this page after refresh | ✅ |  |
+| **Post** | User can click on a post to open the post detail | ✅ |  |
+| **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
+| **Comments** | User sees comments below the post, most recent first | ✅ |  |
+| **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
+| **Edit/delete comment** | Clicking the three dots menu gives the user an option to edit or delete their comment | ✅ |  |
 | About |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **About info** | Text is visible | ✅ |  |
 | User's Profile |  |  |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
