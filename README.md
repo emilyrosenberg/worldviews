@@ -508,8 +508,9 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Profile page (no posts)** |  _"No results"_ message is visible | ✅ |  |
 | **Edit profile** | Clicking the three dots menu gives the user an option to edit, change username, or change password | ✅ |  |
 | **Edit profile - details** | User can add content to the bio section | ✅ |  |
-| **Change the image button** | Opens window to select a file | ✅ |  |
-| **Choose file button** | Opens window to select a file | ✅ | Right now this does the same thing as the Change the image button, and in the future this will be streamlined for better UX |
+| **Change the image button** | Opens window to select a file, only image files are available | ✅ |  |
+| **Choose file button** | Opens window to select a file, only image files are available | ✅ | Right now this does the same thing as the Change the image button, and in the future this will be streamlined for better UX |
+| **Open button** | Updates the user profile with the new image | ✅ |  |
 | **Change username** | Directs to a form where the user can enter a new name and then cancel or save | ✅ |  |
 | **Change password** | Directs to a form where the user can enter their new password, confirm, and cancel or save | ✅ |  |
 | **Cancel button** | Returns to the profile page without changes | ✅ |  |
