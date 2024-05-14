@@ -422,7 +422,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
 
 | Action | Expectation | Pass | Details |
-| :----------------- | :- | :-: | :- |
+| :-------------------------- | :- | :-: | :- |
 | Navbar |  |  |  |
 | **Logo link** | Direct to home page | ✅ |  |
 | **Home link** | Direct to home page | ✅ |  |
@@ -515,7 +515,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Change password** |  | ✅ |  |
 | Other profiles |  |  |  |
 | **Avatar link** | Clicking the avatar directs to that user's profile page | ✅ |  |
-|| **Profile page** | Avatar, username, follow or unfollow button, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
+| **Profile page** | Avatar, username, follow or unfollow button, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
 | **Profile page (no posts)** | _"No results"_ message is visible | ✅ |  |
 | **Posts** | Posts by that user are visible, most recent first, with comment and like count | ✅ |  |
 | **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
