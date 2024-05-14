@@ -422,7 +422,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
 
 | Action | Expectation | Pass | Details |
-| :-------------------------- | :- | :-: | :- |
+| :---------------------------------------------------- | :- | :-: | :- |
 | Navbar |  |  |  |
 | **Logo link** | Direct to home page | ✅ |  |
 | **Home link** | Direct to home page | ✅ |  |
