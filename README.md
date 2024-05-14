@@ -468,8 +468,8 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
 | **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
 | **Trailblazers** | Users' avatars and usernames are visible, with the most-followed users first | ✅ |  |
-| **Trailblazers - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
-| **Trailblazers - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
+| **Trailblazers (logged in) - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
+| **Trailblazers (logged in) - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
 | **Posts** | Posts are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
 | Plans page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
@@ -486,6 +486,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Unfollow** | When the user unfollows another user, posts from that user no longer appears on this page after refresh | ✅ |  |
 | **Post** | User can click on a post to open the post detail | ✅ |  |
 | **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
 | **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
 | **Comments** | User sees comments below the post, most recent first | ✅ |  |
 | **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
@@ -495,6 +496,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Unlike** | When the user clicks the heart again, the post no longer appears on this page after refresh | ✅ |  |
 | **Post** | User can click on a post to open the post detail | ✅ |  |
 | **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
 | **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
 | **Comments** | User sees comments below the post, most recent first | ✅ |  |
 | **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
@@ -512,9 +514,10 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Change username** |  | ✅ |  |
 | **Change password** |  | ✅ |  |
 | Other profiles |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **Avatar link** | Clicking the avatar directs to that user's profile page | ✅ |  |
+| **Posts** | Posts by that user are visible, most recent first, with comment and like count | ✅ |  |
+| **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
+| **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
 | **** |  | ✅ |  |
@@ -522,6 +525,8 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 
 
 ### Bugs
+
+#### Resolved bugs
 - Unable to deploy backend or update Config Vars 
   - Tried [this](https://stackoverflow.com/questions/71076368/unable-to-add-update-config-variables-in-heroku) but it did not work
   - Got help from tutoring, commented out CLIENT_ORIGIN_DEV in settings.py
@@ -588,6 +593,13 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
   </div>
 
   - Thanks to [Mr_Bim_Alumni](https://code-institute-room.slack.com/archives/C5B6PAHDL/p1667047721462989?thread_ts=1667044797.306759&cid=C5B6PAHDL)
+
+#### Unresolved bugs
+Plans url is available to unregistered users
+- During testing I noticed that /plans is available while logged out
+- Plan detail is also visible
+- The fix will be to check if user is logged in, and show the 403 page if not
+- It's not a security issue, just an extra feature, so for now I am leaving it as an unresolved bug
 
 ## Future Implementations
 - Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information
