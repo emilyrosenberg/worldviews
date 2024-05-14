@@ -422,7 +422,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 This web app was tested in Chrome Developer Tools for troubleshooting functionality and style problems during development. It was tested on iOS with Chrome and Safari.
 
 | Action | Expectation | Pass | Details |
-| :- | :- | :-: | :- |
+| :----------------- | :- | :-: | :- |
 | Navbar |  |  |  |
 | **Logo link** | Direct to home page | ✅ |  |
 | **Home link** | Direct to home page | ✅ |  |
@@ -466,14 +466,14 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **** |  | ✅ |  |
 | Home page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
-| **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
+| **Search bar (no results)** | User sees  _"No results"_ message and image | ✅ |  |
 | **Trailblazers** | Users' avatars and usernames are visible, with the most-followed users first | ✅ |  |
 | **Trailblazers (logged in) - follow** | User can click Follow button and posts from that user will appear in Feed | ✅ |  |
-| **Trailblazers (logged in) - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the "no results" message and image |
+| **Trailblazers (logged in) - unfollow** | User can click Unfollow button and posts from that user will no longer appear in Feed | ✅ | If there are no followed users, the Feed page shows the _"No results"_ message and image |
 | **Posts** | Posts are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
 | Plans page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
-| **Search bar (no results)** | User sees "no results" message and image | ✅ |  |
+| **Search bar (no results)** | User sees  _"No results"_ message and image | ✅ |  |
 | **Plans** | Plans are visible, most recent first, with comment and like count | ✅ | Infinite scroll is working but page size is set to 50 as a bug fix for Locations - in the future infinite scroll will be more useful |
 | **Plan** | User can click on a plan to open the plan detail | ✅ |  |
 | **Plan detail** | User sees the plan with the avatar and username of the user who posted, the date it was posted, comment count, any comments, and a comment input form | ✅ |  |
@@ -505,7 +505,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **About info** | Text is visible | ✅ |  |
 | User's Profile |  |  |  |
 | **Profile page** | Avatar, username, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
-| **Profile page (no posts)** | "No results" message is visible | ✅ |  |
+| **Profile page (no posts)** |  _"No results"_ message is visible | ✅ |  |
 | **Edit profile** | Clicking the three dots menu gives the user an option to edit, change username, or change password | ✅ |  |
 | **Edit profile - details** |  | ✅ |  |
 | **Upload image** |  | ✅ |  |
@@ -515,14 +515,11 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Change password** |  | ✅ |  |
 | Other profiles |  |  |  |
 | **Avatar link** | Clicking the avatar directs to that user's profile page | ✅ |  |
+|| **Profile page** | Avatar, username, follow or unfollow button, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
+| **Profile page (no posts)** | _"No results"_ message is visible | ✅ |  |
 | **Posts** | Posts by that user are visible, most recent first, with comment and like count | ✅ |  |
 | **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
 | **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-
 
 ### Bugs
 
