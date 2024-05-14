@@ -441,7 +441,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | Sign up page |  |  |  |
 | **Text fields** | User is able to type a username, password, and password confirmation | ✅ |  |
 | **Sign up button (incorrect entry)** | Show appropriate error message(s) so that user can successfully create an account (_"This field may not be blank"_ etc) | ✅ |  |
-| **Sign up button** | Sign in user and redirect to home page | ✅ | In the future there will be a success message |
+| **Sign up button** | Create user and redirect to sign in page with autofilled username and password | ✅ | In the future there will be a success message |
 | **Sign in link** | Direct to sign in form | ✅ |  |
 | Sign in page |  |  |  |
 | **Text fields** | User is able to type their username and password | ✅ |  |
@@ -507,12 +507,13 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Profile page** | Avatar, username, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
 | **Profile page (no posts)** |  _"No results"_ message is visible | ✅ |  |
 | **Edit profile** | Clicking the three dots menu gives the user an option to edit, change username, or change password | ✅ |  |
-| **Edit profile - details** |  | ✅ |  |
-| **Upload image** |  | ✅ |  |
-| **Cancel button** |  | ✅ |  |
-| **Save button** |  | ✅ |  |
-| **Change username** |  | ✅ |  |
-| **Change password** |  | ✅ |  |
+| **Edit profile - details** | User can add content to the bio section | ✅ |  |
+| **Change the image button** | Opens window to select a file | ✅ |  |
+| **Choose file button** | Opens window to select a file | ✅ | Right now this does the same thing as the Change the image button, and in the future this will be streamlined for better UX |
+| **Change username** | Directs to a form where the user can enter a new name and then cancel or save | ✅ |  |
+| **Change password** | Directs to a form where the user can enter their new password, confirm, and cancel or save | ✅ |  |
+| **Cancel button** | Returns to the profile page without changes | ✅ |  |
+| **Save button** | Updates content and returns to profile page | ✅ | In the future there will be an appropriate success message for each user action |
 | Other profiles |  |  |  |
 | **Avatar link** | Clicking the avatar directs to that user's profile page | ✅ |  |
 | **Profile page** | Avatar, username, follow or unfollow button, bio, and post/followers/following counts are visible, posts are visible | ✅ |  |
