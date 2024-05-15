@@ -448,22 +448,36 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Sign in button (incorrect entry)** | Show appropriate error message(s) so that user can successfully sign in (_"Unable to log in with provided credentials"_ etc) | ✅ |  |
 | **Sign in button** | Sign in user and redirect to home page | ✅ | In the future there will be a success message |
 | **Sign up link** | Direct to sign up form | ✅ |  |
-| New plan |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
 | New post |  |  |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
-| **** |  | ✅ |  |
+| **New post link (logged in)** | Direct to post create form | ✅ |  |
+| **Click or tap to choose an image** | Opens window to select a file, only image files are available | ✅ |  |
+| **Choose file button** | Opens window to select a file, only image files are available | ✅ |  |
+| **Open button** | Updates the user profile with the new image | ✅ |  |
+| **Change image button** | Visible when there is already a user-added image | ✅ |  |
+| **Title and Content input fields** | User is able to add content in the input fields | ✅ |  |
+| **Cancel button** | Does not create post, directs to previous page | ✅ |  |
+| **Create button** | Creates post, directs to new post detail | ✅ | In the future there will be a success message |
+| Edit post |  |  |  |
+| **Three dots menu** | Clicking the three dots menu gives the user an option to edit or delete their post | ✅ |  |
+| **Click edit icon** | Directs to the post edit form, with created content filled in | ✅ |  |
+| **Change the image button** | Opens window to select a file, only image files are available | ✅ |  |
+| **Choose file button** | Opens window to select a file, only image files are available | ✅ | Right now this does the same thing as the Change the image button, and in the future this will be streamlined for better UX |
+| **Open button** | Updates the post with the new image | ✅ |  |
+| **Cancel button** | Does not update content, directs to post detail page | ✅ |  |
+| **Save button** | Updates post, directs to post detail | ✅ | In the future there will be a success message |
+| **Click delete icon** | Deletes post content, directs to the create post form | ✅ | In the future there will be a delete confirmation and a success message |
+| New plan |  |  |  |
+| **New plan link (logged in)** | Direct to plan create form | ✅ |  |
+| **Location dropdown** | User can choose a location from the dropdown menu | ✅ |  |
+| **Title and Content input fields** | User is able to add content in the input fields | ✅ |  |
+| **Cancel button** | Does not create post, directs to previous page | ✅ |  |
+| **Create button** | Creates plan, directs to new plan detail | ✅ | In the future there will be a success message |
+| Edit plan |  |  |  |
+| **Three dots menu** | Clicking the three dots menu gives the user an option to edit or delete their plan | ✅ |  |
+| **Click edit icon** | Directs to the plan edit form, with created content filled in | ✅ |  |
+| **Cancel button** | Does not update content, directs to plan detail page | ✅ |  |
+| **Save button** | Updates plan, directs to plan detail | ✅ | In the future there will be a success message |
+| **Click delete icon** | Deletes plan content, directs to the create plan form | ✅ | In the future there will be a delete confirmation and a success message |
 | Home page |  |  |  |
 | **Search bar** | User can enter text, results load automatically after 3 seconds | ✅ |  |
 | **Search bar (no results)** | User sees  _"No results"_ message and image | ✅ |  |
@@ -497,7 +511,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Post** | User can click on a post to open the post detail | ✅ |  |
 | **Post detail** | User sees the post with the avatar and username of the user who posted, the date it was posted, any comments, like and comment count, and a comment input form | ✅ |  |
 | **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
-| **Comments (no comments)** | User sees "No comments yet" message | ✅ |  |
+| **Comments (no comments)** | User sees _"No comments yet"_ message | ✅ |  |
 | **Comments** | User sees comments below the post, most recent first | ✅ |  |
 | **Create comment** | User can type in the box and click Post to add a comment | ✅ |  |
 | **Edit/delete comment** | Clicking the three dots menu gives the user an option to edit or delete their comment | ✅ |  |
@@ -524,7 +538,6 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Post detail (not logged in)** | User sees error messages _"Log in to like posts!"_ etc, and comment input form is hidden | ✅ |  |
 
 ### Bugs
-
 #### Resolved bugs
 - Unable to deploy backend or update Config Vars 
   - Tried [this](https://stackoverflow.com/questions/71076368/unable-to-add-update-config-variables-in-heroku) but it did not work
