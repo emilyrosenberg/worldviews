@@ -453,7 +453,7 @@ This web app was tested in Chrome Developer Tools for troubleshooting functional
 | **Click or tap to choose an image** | Opens window to select a file, only image files are available | ✅ |  |
 | **Choose file button** | Opens window to select a file, only image files are available | ✅ |  |
 | **Open button** | Updates the user profile with the new image | ✅ |  |
-| **Change image button** | Visible when there is already a user-added image | ✅ |  |
+| **Change image button** | Visible when there is already a user-added image, opens window to select a file, only image files are available | ✅ |  |
 | **Title and Content input fields** | User is able to add content in the input fields | ✅ |  |
 | **Cancel button** | Does not create post, directs to previous page | ✅ |  |
 | **Create button** | Creates post, directs to new post detail | ✅ | In the future there will be a success message |
@@ -612,6 +612,10 @@ Plans url is available to unregistered users
 - Plan detail is also visible
 - The fix will be to check if user is logged in, and show the 403 page if not
 - It's not a security issue, just an extra feature, so for now I am leaving it as an unresolved bug
+
+Cannot access the Django admin panel on deployed app
+- Instead the 404 page is visible
+- 
 
 ## Future Implementations
 - Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information
