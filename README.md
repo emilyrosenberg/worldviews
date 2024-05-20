@@ -613,9 +613,22 @@ Plans url is available to unregistered users
 - The fix will be to check if user is logged in, and show the 403 page if not
 - It's not a security issue, just an extra feature, so for now I am leaving it as an unresolved bug
 
-Cannot access the Django admin panel on deployed app
-- Instead the 404 page is visible
-- 
+Django admin panel styles do not load on the deployed app
+- The admin panel loads without styles
+  <div align="center">
+    <img src="src/assets/readme-images/admin-panel1.png" alt="Admin panel error 1" width="400">
+  </div>
+- These are the errors
+  <div align="center">
+    <img src="src/assets/readme-images/admin-panel2.png" alt="Admin panel error 2" width="400">
+  </div>
+- Tutoring could not help fix this bug, and agreed that these styles are part of Django and we do not have access to them
+- All functionality is accessible
+  <div align="center">
+    <img src="src/assets/readme-images/admin-panel3.png" alt="Admin panel error 3" width="200">
+    <img src="src/assets/readme-images/admin-panel4.png" alt="Admin panel error 4" width="200">
+
+- Because the problem does not affect functionality and cannot be fixed in this version, I am writing it up as an unresolved bug
 
 ## Future Implementations
 - Improved navigation: The user will be able to see the most important links, and have a less-cluttered navigation option for finding other information
