@@ -384,7 +384,7 @@ All [user stories](#user-stories) have been tracked, implemented, and tested for
 | **View a post**: As a user I can view the details of a single post so that I can learn more about it | ✅ | A user can click on a post to view it |
 | **Like a post**: As a logged in user I can like a post so that I can show my support for the posts that interest me | ✅ | A user can like a post by clicking on the heart icon |
 | The Posts Page |  |  |
-| **View most recent posts**: As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content | ✅ | The posts page contains all posts, ordered by date wiht he most recent posts first |
+| **View most recent posts**: As a user I can view all the most recent posts, ordered by most recently created first so that I am up to date with the newest content | ✅ | The posts page contains all posts, ordered by date with the most recent posts first |
 | **Keyword search**: As a user, I can search for posts with keywords, so that I can find the posts and user profiles I am most interested in | ✅ | The keyword search returns posts containing the entered keyword |
 | **View liked posts**: As a logged in user I can view the posts I liked so that I can find the posts I enjoy the most | ✅ | A user can click on Liked in the navbar to view all the posts they have liked |
 | **View posts of followed users**: As a logged in user I can view content filtered by users I follow so that I can keep up to date with what they are posting about | ✅ | A user can click on Feed in the navbar to view posts by all the users they have followed |
@@ -625,8 +625,8 @@ Django admin panel styles do not load on the deployed app
 - Tutoring could not help fix this bug, and agreed that these styles are part of Django and we do not have access to them
 - All functionality is accessible
   <div align="center">
-    <img src="src/assets/readme-images/admin-panel3.png" alt="Admin panel error 3" width="200">
-    <img src="src/assets/readme-images/admin-panel4.png" alt="Admin panel error 4" width="200">
+    <img src="src/assets/readme-images/admin-panel3.png" alt="Admin panel error 3" width="250">
+    <img src="src/assets/readme-images/admin-panel4.png" alt="Admin panel error 4" width="250">
 
 - Because the problem does not affect functionality and cannot be fixed in this version, I am writing it up as an unresolved bug
 
